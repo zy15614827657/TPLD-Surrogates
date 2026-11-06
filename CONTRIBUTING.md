@@ -1,6 +1,6 @@
 # 贡献指南
 
-本项目以 `TSYGAI/TSYG-Surrogates` 为公司组织仓库，贡献者使用各自的个人 GitHub 账号提交。
+当前展示预览托管在 `zy15614827657/TSYG-Surrogates`，后续计划在完成公司组织授权后转移或贡献至 `TSYGAI/TSYG-Surrogates`。贡献者使用各自的个人 GitHub 账号提交。
 
 ## 提交方式
 
