@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="420" viewBox="0 0 1400 420" role="img" aria-labelledby="title desc">
+  <title id="title">TSYG-Surrogates</title>
+  <desc id="desc">AI surrogate models for structural and fluid dynamics. Geometry, dynamics, and full-field response.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#081322"/><stop offset="1" stop-color="#12313b"/></linearGradient>
+    <linearGradient id="line"><stop stop-color="#31d3d4"/><stop offset="1" stop-color="#bded72"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#26cfca" stop-opacity=".2"/><stop offset="1" stop-color="#26cfca" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#90c3c8" stroke-opacity=".09"/></pattern>
+  </defs>
+  <rect width="1400" height="420" rx="18" fill="url(#bg)"/>
+  <rect width="1400" height="420" rx="18" fill="url(#grid)"/>
+  <ellipse cx="1130" cy="210" rx="360" ry="290" fill="url(#glow)"/>
+  <rect x="64" y="62" width="5" height="24" rx="2" fill="#adE967"/>
+  <text x="83" y="80" font-family="Segoe UI,Arial,sans-serif" font-size="17" letter-spacing="3" fill="#b6d1d5">TSYG  /  ENGINEERING AI RESEARCH</text>
+  <text x="60" y="168" font-family="Segoe UI,Arial,sans-serif" font-size="64" font-weight="700" letter-spacing="-2" fill="#f4fbff">TSYG-Surrogates</text>
+  <text x="64" y="220" font-family="Segoe UI,Arial,sans-serif" font-size="25" fill="#e2eef2">AI surrogate models for structural &amp; fluid dynamics</text>
+  <text x="65" y="258" font-family="Segoe UI,Arial,sans-serif" font-size="19" fill="#9eb8c3">Geometry-aware representations. Time-resolved physical fields.</text>
+  <g font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#cde5e8">
+    <rect x="64" y="313" width="164" height="35" rx="17" fill="#12333c" stroke="#31505b"/><text x="82" y="336">CRASH DYNAMICS</text>
+    <rect x="240" y="313" width="178" height="35" rx="17" fill="#12333c" stroke="#31505b"/><text x="258" y="336">STRUCTURAL IMPACT</text>
+    <rect x="430" y="313" width="190" height="35" rx="17" fill="#12333c" stroke="#31505b"/><text x="450" y="336">FLOW RECONSTRUCTION</text>
+  </g>
+  <g fill="none" stroke="url(#line)" stroke-width="2" opacity=".8">
+    <path d="M930 100C1040 100 1000 200 1100 200S1190 80 1320 120"/>
+    <path d="M925 128C1040 128 1000 224 1110 222S1210 105 1335 151"/>
+    <path d="M920 157C1025 157 1005 247 1118 247S1220 133 1340 185"/>
+    <path d="M915 187C1030 187 1020 275 1135 270S1240 169 1345 217"/>
+    <path d="M910 217C1035 217 1025 299 1150 297S1250 206 1350 250"/>
+    <path d="M905 247C1035 247 1030 326 1160 324S1270 244 1355 283"/>
+  </g>
+  <g fill="#afea76"><circle cx="1100" cy="200" r="5"/><circle cx="1118" cy="247" r="5"/><circle cx="1150" cy="297" r="5"/></g>
+  <path d="M64 388H1336" stroke="url(#line)" stroke-width="2" opacity=".5"/>
+</svg>

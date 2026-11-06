@@ -1,0 +1,104 @@
+<div align="center">
+  <img src="assets/branding/hero.svg" width="100%" alt="TSYG-Surrogates — AI surrogate models for structural and fluid dynamics" />
+
+  <h1>TSYG-Surrogates</h1>
+  <p><strong>面向结构动力学与流体动力学的人工智能代理模型</strong></p>
+  <p>从几何与工况，到随时间演化的物理场。</p>
+  <p>
+    <a href="#showcase">研究案例</a> ·
+    <a href="#research">研究方向</a> ·
+    <a href="#results">评估结果</a> ·
+    <a href="docs/methodology.md">方法与文档</a> ·
+    <a href="CONTRIBUTING.md">参与贡献</a>
+  </p>
+  <p><strong>简体中文</strong> | <a href="README.en.md">English</a></p>
+</div>
+
+**TSYG-Surrogates** 汇集 [TSYGAI](https://github.com/TSYGAI) 在车辆碰撞、结构冲击与复杂几何流动中的代理模型研究成果。我们研究物理场的空间表示、潜空间时序演化与全场响应预测，并通过仿真真实值、模型结果和误差对照呈现研究进展。
+
+本仓库提供研究案例、评估摘要、高清云图和动态演示。每项结果均注明任务类型、模型版本与评估范围，便于从可视化追溯到量化证据。
+
+<a id="showcase"></a>
+## TSYG-Surrogates in Action
+
+<table>
+  <tr>
+    <th width="50%">车辆碰撞 · Vehicle Crash</th>
+    <th width="50%">保险杠冲击 · Bumper Impact</th>
+  </tr>
+  <tr>
+    <td><a href="docs/car-crash.md"><img src="assets/car-crash/prediction.gif" width="100%" alt="车辆碰撞 Stage 3 预测、真实值与向量误差，0–120 ms，共13帧" /></a></td>
+    <td><a href="docs/bumper.md"><img src="assets/bumper/prediction.gif" width="100%" alt="保险杠 Stage 2 整轨迹预测、真实值与向量误差，共11帧，采用源时间单位" /></a></td>
+  </tr>
+  <tr>
+    <td><strong>三维瞬态响应预测</strong><br/>初始白车身几何与设计条件 → 后续位移场。136,727 个节点，展示完整保存时间序列。<br/><a href="docs/car-crash.md">案例说明 →</a> · <a href="assets/car-crash/full-comparison.png">四视角高清图</a></td>
+    <td><strong>结构冲击整轨迹预测</strong><br/>静态工况、初始网格与时间轴 → 结构响应。13,676 个节点，展示预测、真实值及误差。<br/><a href="docs/bumper.md">案例说明 →</a> · <a href="assets/bumper/full-comparison.png">四视角高清图</a></td>
+  </tr>
+  <tr>
+    <th>流场重建 · Flow Reconstruction</th>
+    <th>绕流演化 · Reference Flow</th>
+  </tr>
+  <tr>
+    <td><a href="docs/flow.md"><img src="assets/flow/reconstruction-preview.png" width="100%" alt="Flow Epoch 71 流场自编码器重建：真实值、重建值及误差；此任务输入真实流场" /></a></td>
+    <td><a href="docs/flow.md"><img src="assets/flow/reference-snapshots.gif" width="100%" alt="FlowBench harmonics/1 Re603 原始仿真速度场的4个实际时间快照轮播，不是模型预测" /></a></td>
+  </tr>
+  <tr>
+    <td><strong>复杂几何下的物理场表示</strong><br/>二维速度与压力的空间压缩和重建。此图采用 Epoch 71，并输入当前帧真实场。<br/><a href="docs/flow.md">案例说明 →</a> · <a href="assets/flow/reconstruction-full.png">u / v / p 高清对比</a></td>
+    <td><strong>原始仿真数据展示</strong><br/>Re = 603，1024 × 256 网格。轮播 4 个实际保存快照，展示绕流与尾迹结构。<br/><a href="assets/flow/reference-time-sequence.png">速度与压力时间快照 →</a></td>
+  </tr>
+</table>
+
+**读图说明：** 结构案例为条件驱动的后续响应预测；Flow 对比图为自编码器重建；右下动图为原始仿真数据。GIF 播放速度用于演示，未在时间上插值。点击图片可查看任务定义与完整结果。
+
+<a id="research"></a>
+## 研究方向
+
+| 方向 | 研究问题 | 当前展示 |
+| :--- | :--- | :--- |
+| **结构动力学代理模型** | 如何从结构几何、设计参数与初始条件预测非线性瞬态响应？ | 白车身碰撞、保险杠冲击的三维位移场与误差分析 |
+| **物理场空间表示** | 如何在网格与复杂流体域上压缩、重建高维物理场？ | 多尺度空间表示，以及速度、压力重建结果 |
+| **潜空间动力学** | 如何在紧凑表示上学习响应随时间的演化？ | 结构整轨迹预测；Flow 使用真实历史场的单步预测评估 |
+| **可追溯评估** | 如何区分视觉效果、重建精度与未来预测能力？ | 模型哈希、逐帧指标、独立验证/测试工况及素材来源 |
+
+<img src="assets/branding/workflow.svg" width="100%" alt="研究流程：几何与工况、空间表示、时间演化、全场响应；具体输入条件以各案例文档为准" />
+
+## 为什么关注全场代理模型
+
+- **从标量指标走向空间分布。** 同时观察结构变形、流场分布与局部误差，分析不同区域的响应。
+- **让几何与工况进入模型。** 以网格、SDF、设计变量和已知条件表达工程问题。
+- **连接空间与时间。** 将空间编码、时序建模与坐标解码组合，研究连续响应与整段轨迹。
+- **让结果能够核对。** 展示真实值和误差，保留评估口径与来源记录。
+
+<a id="results"></a>
+## 评估快照
+
+以下结果来自不同任务与检查点，应按各自评估口径阅读。
+
+| 案例 / 模型 | 评估范围 | 已核验结果 |
+| :--- | :--- | :--- |
+| **Car Crash · Stage 3** | 18 个验证工况；每工况 13 个保存帧；0–120 ms | 136,727 节点、248,601 三角面片；提供逐工况、逐帧空间 R² |
+| **Bumper · Stage 2** | 7 个验证工况；每工况 10 个未来帧；排除已知初始帧 | 位移幅值 R² 的工况均值 **0.999615**；向量 RMSE 工况均值 **3.5167（源长度单位）** |
+| **Flow · Epoch 95 重建** | 85 个测试工况；20,570 个有效帧；全流体网格 | u / v / p 相对 L2：**1.373% / 3.247% / 3.500%** |
+| **Flow · Epoch 95 单步预测** | 85 个测试工况；20,230 个连续时间窗口；输入两帧真实历史场 | u / v / p 相对 L2：**1.370% / 3.240% / 3.531%** |
+
+结构案例的 R² 归约方式详见案例文档。Flow 的百分比按工况等权统计；Epoch 95 指标与上方 Epoch 71 图册分开记录。单步预测结果不代表长时间自由滚动的精度。
+
+**[完整评估口径](docs/results.md)** · **[机器可读结果](results/summary.json)** · **[素材来源与哈希](results/provenance.json)**
+
+## 浏览与使用
+
+直接浏览本页的 GIF，或进入案例文档查看高清图与指标。阅读展示内容无需安装 Python。
+
+| 文档 | 内容 |
+| :--- | :--- |
+| [车辆碰撞](docs/car-crash.md) | 三维预测、时间范围、网格规模与逐帧 R² |
+| [保险杠冲击](docs/bumper.md) | Stage 1 / Stage 2 区别、工况与单位定义 |
+| [Flow 流场](docs/flow.md) | 重建、真实历史条件单步预测与原始数据展示 |
+| [方法与素材生成](docs/methodology.md) | 研究流程、素材生成方法与复核命令 |
+| [贡献指南](CONTRIBUTING.md) | 使用个人账号向 TSYGAI 公司仓库贡献 |
+
+## 研究与交流
+
+欢迎围绕结构瞬态响应、复杂几何流动、科学机器学习评估与工程应用开展讨论。可通过仓库 Issues 提出技术问题，或通过 Pull Request 补充案例与文档。
+
+本仓库当前发布展示素材及评估摘要；训练代码、完整数据集与模型权重不包含在此版本中。材料来源与使用说明见 [NOTICE](NOTICE.md)。主页的信息组织参考 [NVIDIA PhysicsNeMo](https://github.com/NVIDIA/physicsnemo)，TSYG-Surrogates 为独立项目。

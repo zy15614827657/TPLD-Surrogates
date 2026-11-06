@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="280" viewBox="0 0 1400 280" role="img" aria-labelledby="title desc">
+<title id="title">TSYG research workflow</title><desc id="desc">Geometry and conditions are encoded into spatial representations, evolved over time, and decoded into physical fields. Flow autoencoder reconstruction additionally uses the true field.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#29b3a7" stroke-width="1.5"/></marker></defs>
+<rect width="1400" height="280" rx="16" fill="#f3f7f9"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+<text x="35" y="40" font-size="16" letter-spacing="2" fill="#577180">RESEARCH WORKFLOW</text>
+<g fill="#fff" stroke="#ccdade"><rect x="35" y="68" width="295" height="120" rx="12"/><rect x="380" y="68" width="295" height="120" rx="12"/><rect x="725" y="68" width="295" height="120" rx="12"/><rect x="1070" y="68" width="295" height="120" rx="12"/></g>
+<g fill="#12303c" font-size="23" font-weight="600"><text x="58" y="113">Geometry &amp; conditions</text><text x="403" y="113">Spatial representation</text><text x="748" y="113">Temporal modeling</text><text x="1093" y="113">Full-field response</text></g>
+<g fill="#526a77" font-size="17"><text x="58" y="145">Meshes · SDF · design inputs</text><text x="403" y="145">Multiscale graph encoders</text><text x="748" y="145">Latent state evolution</text><text x="1093" y="145">Displacement · velocity · p</text><text x="58" y="170">Known initial conditions</text><text x="403" y="170">Compact physical features</text><text x="748" y="170">Query times &amp; trajectories</text><text x="1093" y="170">Truth / model / error</text></g>
+<g stroke="#29b3a7" stroke-width="2" marker-end="url(#arrow)"><path d="M339 128H367"/><path d="M684 128H712"/><path d="M1029 128H1057"/></g>
+<text x="35" y="230" font-size="17" fill="#526a77">Task-specific paths: structural prediction uses known conditions; flow AE reconstruction also encodes the true field.</text>
+<text x="35" y="255" font-size="15" fill="#6a7e89">This diagram summarizes the research direction. Each case page defines the exact inputs, checkpoint, and evaluation scope.</text>
+</g></svg>

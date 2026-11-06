@@ -1,0 +1,394 @@
+{
+  "schema": "fpo_stage1_reconstruction_one_step_all_test_v1",
+  "checkpoint_sha256": "e1aa3fab048c11a722082a274ae72b73e5ddf92633dd84292b260fab06c688bc",
+  "checkpoint_epoch": 95,
+  "split": "test",
+  "case_count": 85,
+  "case_ids": [
+    "harmonics/10/Re_288",
+    "harmonics/10/Re_371",
+    "harmonics/10/Re_534",
+    "harmonics/10/Re_652",
+    "harmonics/17/Re_166",
+    "harmonics/17/Re_473",
+    "harmonics/17/Re_974",
+    "harmonics/22/Re_164",
+    "harmonics/22/Re_617",
+    "harmonics/40/Re_345",
+    "harmonics/40/Re_576",
+    "harmonics/40/Re_664",
+    "harmonics/42/Re_186",
+    "harmonics/42/Re_485",
+    "harmonics/42/Re_672",
+    "harmonics/42/Re_856",
+    "harmonics/42/Re_997",
+    "harmonics/65/Re_319",
+    "harmonics/65/Re_415",
+    "harmonics/65/Re_704",
+    "harmonics/65/Re_817",
+    "harmonics/80/Re_198",
+    "harmonics/80/Re_425",
+    "harmonics/80/Re_613",
+    "harmonics/80/Re_690",
+    "harmonics/82/Re_263",
+    "harmonics/82/Re_519",
+    "harmonics/82/Re_763",
+    "harmonics/82/Re_874",
+    "harmonics/82/Re_905",
+    "harmonics/85/Re_258",
+    "harmonics/85/Re_449",
+    "harmonics/85/Re_593",
+    "harmonics/85/Re_788",
+    "harmonics/85/Re_906",
+    "harmonics/92/Re_272",
+    "harmonics/92/Re_411",
+    "nurbs/3/Re_180",
+    "nurbs/3/Re_408",
+    "nurbs/3/Re_715",
+    "nurbs/3/Re_793",
+    "nurbs/3/Re_943",
+    "nurbs/10/Re_113",
+    "nurbs/10/Re_247",
+    "nurbs/10/Re_502",
+    "nurbs/10/Re_717",
+    "nurbs/10/Re_881",
+    "nurbs/11/Re_107",
+    "nurbs/11/Re_269",
+    "nurbs/11/Re_396",
+    "nurbs/11/Re_683",
+    "nurbs/11/Re_781",
+    "nurbs/13/Re_312",
+    "nurbs/13/Re_459",
+    "nurbs/13/Re_729",
+    "nurbs/13/Re_838",
+    "nurbs/13/Re_920",
+    "nurbs/23/Re_113",
+    "nurbs/23/Re_506",
+    "nurbs/23/Re_726",
+    "nurbs/23/Re_785",
+    "nurbs/23/Re_902",
+    "nurbs/62/Re_179",
+    "nurbs/62/Re_372",
+    "nurbs/62/Re_492",
+    "nurbs/62/Re_561",
+    "nurbs/62/Re_979",
+    "nurbs/71/Re_191",
+    "nurbs/71/Re_393",
+    "nurbs/71/Re_575",
+    "nurbs/71/Re_739",
+    "nurbs/72/Re_170",
+    "nurbs/72/Re_333",
+    "nurbs/72/Re_683",
+    "nurbs/72/Re_866",
+    "nurbs/72/Re_959",
+    "nurbs/87/Re_311",
+    "nurbs/87/Re_493",
+    "nurbs/87/Re_606",
+    "nurbs/87/Re_874",
+    "nurbs/100/Re_141",
+    "nurbs/100/Re_331",
+    "nurbs/100/Re_479",
+    "nurbs/100/Re_621",
+    "nurbs/100/Re_958"
+  ],
+  "channels": [
+    "u",
+    "v",
+    "p"
+  ],
+  "reconstruction_scope": "all_valid_frames_including_prefix",
+  "one_step_scope": "all_valid_continuous_triplets",
+  "reconstruction_inputs": "geometry, Re, and true field at the reconstructed frame",
+  "one_step_inputs": "geometry, Re, two true historical fields, and actual query intervals",
+  "autoregressive_rollout": false,
+  "relative_error_definition": "Per case/channel: sqrt(sum((prediction_original-truth_original)^2)/sum(truth_original^2)); arithmetic mean across cases, then channels",
+  "mse_definition": "Per case/channel: sum squared error divided by evaluated fluid space-time points; arithmetic mean across cases, then channels",
+  "zero_denominator_policy": "Exact zero error and target yields 0; nonzero error with zero target yields null",
+  "original_units": "Original stored field scale; no independently verified SI units",
+  "overall": {
+    "reconstruction": {
+      "case_count": 85,
+      "total_frames": 20570,
+      "total_space_time_points": 5346508178,
+      "weighting": "equal_per_case_then_equal_per_channel",
+      "mse_original": [
+        0.0001767971914652888,
+        0.00015960404647143912,
+        9.843457689541593e-05
+      ],
+      "mse_original_channel_mean": 0.0001449452716107146,
+      "mse_normalized": [
+        0.0015153694471127211,
+        0.0011650608343360225,
+        0.0014201189208651556
+      ],
+      "mse_normalized_channel_mean": 0.001366849734104633,
+      "relative_l2_original": [
+        0.013728960489220727,
+        0.032466776053749216,
+        0.03499866645042547
+      ],
+      "relative_l2_original_undefined_cases": [
+        0,
+        0,
+        0
+      ],
+      "relative_l2_original_channel_mean": 0.027064800997798472,
+      "relative_l2_normalized": [
+        0.037569247734311494,
+        0.032466832321913656,
+        0.03905770021037447
+      ],
+      "relative_l2_normalized_undefined_cases": [
+        0,
+        0,
+        0
+      ],
+      "relative_l2_normalized_channel_mean": 0.03636459342219987,
+      "relative_l1_original": [
+        0.007819217706768392,
+        0.025233348783589418,
+        0.029556080855836275
+      ],
+      "relative_l1_original_undefined_cases": [
+        0,
+        0,
+        0
+      ],
+      "relative_l1_original_channel_mean": 0.02086954911539803,
+      "pooled_mse_original": [
+        0.00017685016187626214,
+        0.0001596530678232603,
+        9.847027173569095e-05
+      ],
+      "pooled_relative_l2_original": [
+        0.014523642578951342,
+        0.034817185016885764,
+        0.0351906739530745
+      ],
+      "pooled_mse_normalized": [
+        0.0015158234687024472,
+        0.0011654186752418578,
+        0.0014206338915381457
+      ],
+      "pooled_relative_l2_normalized": [
+        0.03889063721978336,
+        0.03481716511019841,
+        0.03923364187081557
+      ]
+    },
+    "reconstruction_on_prediction_targets": {
+      "case_count": 85,
+      "total_frames": 20230,
+      "total_space_time_points": 5258136142,
+      "weighting": "equal_per_case_then_equal_per_channel",
+      "mse_original": [
+        0.0001767622432198701,
+        0.000159608686530456,
+        9.846049291725788e-05
+      ],
+      "mse_original_channel_mean": 0.00014494380755586132,
+      "mse_normalized": [
+        0.001515069897647814,
+        0.0011650947053254046,
+        0.0014204928122522255
+      ],
+      "mse_normalized_channel_mean": 0.001366885805075148,
+      "relative_l2_original": [
+        0.013727185152131217,
+        0.0324642486966758,
+        0.03499456651019468
+      ],
+      "relative_l2_original_undefined_cases": [
+        0,
+        0,
+        0
+      ],
+      "relative_l2_original_channel_mean": 0.027062000119667234,
+      "relative_l2_normalized": [
+        0.03756326403265314,
+        0.032464301286503995,
+        0.039056988126436806
+      ],
+      "relative_l2_normalized_undefined_cases": [
+        0,
+        0,
+        0
+      ],
+      "relative_l2_normalized_channel_mean": 0.03636151781519798,
+      "relative_l1_original": [
+        0.007818537727172751,
+        0.025231710819119117,
+        0.029548997697820656
+      ],
+      "relative_l1_original_undefined_cases": [
+        0,
+        0,
+        0
+      ],
+      "relative_l1_original_channel_mean": 0.020866415414704177,
+      "pooled_mse_original": [
+        0.0001768152548054313,
+        0.00015965776495795118,
+        9.849623067583237e-05
+      ],
+      "pooled_relative_l2_original": [
+        0.014521975570913764,
+        0.03481433915693535,
+        0.0351866438688141
+      ],
+      "pooled_mse_normalized": [
+        0.0015155242721544664,
+        0.0011654529628662123,
+        0.0014210084021090102
+      ],
+      "pooled_relative_l2_normalized": [
+        0.03888330781781949,
+        0.03481431540934035,
+        0.039233514024801464
+      ]
+    },
+    "one_step": {
+      "case_count": 85,
+      "total_frames": 20230,
+      "total_space_time_points": 5258136142,
+      "weighting": "equal_per_case_then_equal_per_channel",
+      "mse_original": [
+        0.00017501460927516878,
+        0.0001573402425507971,
+        9.987197269390943e-05
+      ],
+      "mse_original_channel_mean": 0.00014407560817329178,
+      "mse_normalized": [
+        0.0015000905236281096,
+        0.001148535758297645,
+        0.0014408562711961874
+      ],
+      "mse_normalized_channel_mean": 0.0013631608510406474,
+      "relative_l2_original": [
+        0.01370178047398568,
+        0.0323991208545181,
+        0.035313500509144204
+      ],
+      "relative_l2_original_undefined_cases": [
+        0,
+        0,
+        0
+      ],
+      "relative_l2_original_channel_mean": 0.02713813394588266,
+      "relative_l2_normalized": [
+        0.0375686631843673,
+        0.03239916775874106,
+        0.039416362969768484
+      ],
+      "relative_l2_normalized_undefined_cases": [
+        0,
+        0,
+        0
+      ],
+      "relative_l2_normalized_channel_mean": 0.03646139797095895,
+      "relative_l1_original": [
+        0.007943723474430647,
+        0.02553320717381012,
+        0.0300769946455064
+      ],
+      "relative_l1_original_undefined_cases": [
+        0,
+        0,
+        0
+      ],
+      "relative_l1_original_channel_mean": 0.02118464176458239,
+      "pooled_mse_original": [
+        0.00017506501783220248,
+        0.00015738623092535463,
+        9.990708430929533e-05
+      ],
+      "pooled_relative_l2_original": [
+        0.014449922652588395,
+        0.034565791082146226,
+        0.035437753451431575
+      ],
+      "pooled_mse_normalized": [
+        0.001500522586978125,
+        0.001148871459394927,
+        0.0014413628276715158
+      ],
+      "pooled_relative_l2_normalized": [
+        0.03869038255287357,
+        0.03456576753091373,
+        0.03951350401414076
+      ]
+    },
+    "persistence": {
+      "case_count": 85,
+      "total_frames": 20230,
+      "total_space_time_points": 5258136142,
+      "weighting": "equal_per_case_then_equal_per_channel",
+      "mse_original": [
+        0.0002307139567308254,
+        0.0007660942183533568,
+        0.00018266441319001456
+      ],
+      "mse_original_channel_mean": 0.00039315752942473223,
+      "mse_normalized": [
+        0.0019775024502249154,
+        0.0055922540500849644,
+        0.002635305644479337
+      ],
+      "mse_normalized_channel_mean": 0.0034016873815964055,
+      "relative_l2_original": [
+        0.016154723282196574,
+        0.0751780767313075,
+        0.04449146479111838
+      ],
+      "relative_l2_original_undefined_cases": [
+        0,
+        0,
+        0
+      ],
+      "relative_l2_original_channel_mean": 0.04527475493487415,
+      "relative_l2_normalized": [
+        0.04893725559138671,
+        0.07517811026706049,
+        0.05005605387727142
+      ],
+      "relative_l2_normalized_undefined_cases": [
+        0,
+        0,
+        0
+      ],
+      "relative_l2_normalized_channel_mean": 0.058057139911906204,
+      "relative_l1_original": [
+        0.01198967327022929,
+        0.05760160350540223,
+        0.0396169181661581
+      ],
+      "relative_l1_original_undefined_cases": [
+        0,
+        0,
+        0
+      ],
+      "relative_l1_original_channel_mean": 0.0364027316472632,
+      "pooled_mse_original": [
+        0.00023068150380261692,
+        0.0007659741640634738,
+        0.00018268355679006975
+      ],
+      "pooled_relative_l2_original": [
+        0.016587167229717075,
+        0.0762553280697317,
+        0.047920105914938026
+      ],
+      "pooled_mse_normalized": [
+        0.0019772242887043574,
+        0.005591377690402763,
+        0.002635581829828169
+      ],
+      "pooled_relative_l2_normalized": [
+        0.04441296051412913,
+        0.07625527631484094,
+        0.0534314718657405
+      ]
+    }
+  }
+}

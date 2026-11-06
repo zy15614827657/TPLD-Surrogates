@@ -1,0 +1,124 @@
+{
+  "schema": "fpo_test_final_frame_atlas_v1",
+  "scope": "One fixed final frame from each of all 85 test cases, not all test trajectories",
+  "model_task": "Stage-1 AE reconstruction; the true displayed frame enters the encoder",
+  "geometry_only_prediction": false,
+  "stage": 1,
+  "case_count": 85,
+  "checkpoint_epoch": 71,
+  "checkpoint_sha256": "21038b6c6f68744953fee3163eb3260afcd785e577aa2ae255ecd61bbe27a7ff",
+  "frame_index_zero_based": 241,
+  "case_weighting": "equal",
+  "overall": {
+    "case_count": 85,
+    "geometry_count": 20,
+    "case_mean_normalized_mse": {
+      "mean": 0.0015949486817501558,
+      "median": 0.0011668053288514603,
+      "minimum": 0.00036700965011900573,
+      "maximum": 0.006075452429277612
+    },
+    "worst_case_by_mean_normalized_mse": {
+      "case_id": "nurbs/71/Re_739",
+      "value": 0.006075452429277612
+    },
+    "channels": {
+      "u": {
+        "rmse": {
+          "mean": 0.0139877302551761,
+          "median": 0.013156171561251795,
+          "minimum": 0.006673176921400743,
+          "maximum": 0.028936399243047594
+        },
+        "mae": {
+          "mean": 0.007414910595543487,
+          "median": 0.006207564792333113,
+          "minimum": 0.0037611151548007015,
+          "maximum": 0.013776277417457265
+        },
+        "max_absolute_error": {
+          "mean": 0.42592797505066676,
+          "median": 0.3965996503829956,
+          "minimum": 0.156651109457016,
+          "maximum": 1.2363041639328003
+        },
+        "relative_l2": {
+          "mean": 0.015514452224911095,
+          "median": 0.013852443970443244,
+          "minimum": 0.007131787319419553,
+          "maximum": 0.03360776792216331
+        },
+        "normalized_mse": {
+          "mean": 0.0019354457700757272,
+          "median": 0.00148355010723888,
+          "minimum": 0.0003816879428260931,
+          "maximum": 0.0071768213994081445
+        }
+      },
+      "v": {
+        "rmse": {
+          "mean": 0.012813507832059364,
+          "median": 0.011490683803905924,
+          "minimum": 0.007345109934777486,
+          "maximum": 0.026088454808358988
+        },
+        "mae": {
+          "mean": 0.007253759173173051,
+          "median": 0.006563235383677368,
+          "minimum": 0.0052362088678087615,
+          "maximum": 0.011952808802248437
+        },
+        "max_absolute_error": {
+          "mean": 0.4157794433645904,
+          "median": 0.393995001912117,
+          "minimum": 0.1550363078713417,
+          "maximum": 1.3438705205917358
+        },
+        "relative_l2": {
+          "mean": 0.035352296135686585,
+          "median": 0.03207924176903059,
+          "minimum": 0.021951975432077962,
+          "maximum": 0.0637948438916742
+        },
+        "normalized_mse": {
+          "mean": 0.0013399144788678538,
+          "median": 0.0009638211586004417,
+          "minimum": 0.00039382321069999344,
+          "maximum": 0.004968226901092056
+        }
+      },
+      "p": {
+        "rmse": {
+          "mean": 0.009505899251260368,
+          "median": 0.008388568193221214,
+          "minimum": 0.004115880761625481,
+          "maximum": 0.02053099610003657
+        },
+        "mae": {
+          "mean": 0.004228299422911493,
+          "median": 0.0038889966479571793,
+          "minimum": 0.0022864948886353108,
+          "maximum": 0.008636569474435116
+        },
+        "max_absolute_error": {
+          "mean": 0.500900550186634,
+          "median": 0.4329334944486618,
+          "minimum": 0.21621111035346985,
+          "maximum": 1.9652177691459656
+        },
+        "relative_l2": {
+          "mean": 0.03533182504616648,
+          "median": 0.034579814823751595,
+          "minimum": 0.020733475397527637,
+          "maximum": 0.0598813721922724
+        },
+        "normalized_mse": {
+          "mean": 0.0015094857963068866,
+          "median": 0.0010152025687598504,
+          "minimum": 0.00024440078609307164,
+          "maximum": 0.0060813089873326355
+        }
+      }
+    }
+  }
+}

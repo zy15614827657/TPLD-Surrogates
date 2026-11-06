@@ -1,0 +1,321 @@
+{
+  "stage": "stage2",
+  "task": "condition_only_one_shot_prediction",
+  "case_ids": [
+    "Run224",
+    "Run225",
+    "Run226",
+    "Run227",
+    "Run228",
+    "Run229",
+    "Run230"
+  ],
+  "case_count": 7,
+  "metric_frame_scope": "future_frames_excluding_initial",
+  "metric_reduction": "channel metrics over frames/nodes per case; cases equally weighted",
+  "checkpoint_sha256": "f90ad8125bf95b9abb6f57f298d3e191b77b1181ee02672f07c315abb574897a",
+  "checkpoint_epoch_display": 615,
+  "length_unit": "source_length",
+  "time_unit": "source_time",
+  "cases": [
+    {
+      "case_id": "Run224",
+      "shape": [
+        11,
+        13676,
+        3
+      ],
+      "future_metrics": {
+        "frame_count": 10,
+        "node_count": 13676,
+        "channels": {
+          "X": {
+            "rmse": 1.0117858311392398,
+            "mae": 0.7717547808771908,
+            "r2_position": 0.9998182980070438,
+            "r2_displacement": 0.9997362513813798,
+            "relative_l2_position": 0.011603024181758036,
+            "nrmse_displacement_rms": 0.007855069154213282
+          },
+          "Y": {
+            "rmse": 2.214364607546089,
+            "mae": 1.7415225893228268,
+            "r2_position": 0.9999870771873616,
+            "r2_displacement": 0.984705923048101,
+            "relative_l2_position": 0.0035941124114260378,
+            "nrmse_displacement_rms": 0.10204098605616063
+          },
+          "Z": {
+            "rmse": 0.38532950961243373,
+            "mae": 0.2306051004079115,
+            "r2_position": 0.9999437023992873,
+            "r2_displacement": 0.9746280994595734,
+            "relative_l2_position": 0.007496329756633205,
+            "nrmse_displacement_rms": 0.1325249321897993
+          }
+        },
+        "mean_rel_l2_position": 0.007564488783272426,
+        "vector_rmse": 2.4648732247776017,
+        "magnitude_r2_displacement": 0.9996952237594687,
+        "magnitude_rmse_displacement": 1.0627869415068258
+      }
+    },
+    {
+      "case_id": "Run225",
+      "shape": [
+        11,
+        13676,
+        3
+      ],
+      "future_metrics": {
+        "frame_count": 10,
+        "node_count": 13676,
+        "channels": {
+          "X": {
+            "rmse": 1.1763603732023833,
+            "mae": 0.8946209473179669,
+            "r2_position": 0.9997875535316957,
+            "r2_displacement": 0.999771561838916,
+            "relative_l2_position": 0.012032529892848415,
+            "nrmse_displacement_rms": 0.00805703047885922
+          },
+          "Y": {
+            "rmse": 2.21553475004159,
+            "mae": 1.7306063493322577,
+            "r2_position": 0.9999869899449387,
+            "r2_displacement": 0.9872319826794753,
+            "relative_l2_position": 0.003606307451905277,
+            "nrmse_displacement_rms": 0.09721747535967348
+          },
+          "Z": {
+            "rmse": 0.9960815976483363,
+            "mae": 0.5810638597631781,
+            "r2_position": 0.9996237507237401,
+            "r2_displacement": 0.8969287790618824,
+            "relative_l2_position": 0.01936577324099667,
+            "nrmse_displacement_rms": 0.25622134569121313
+          }
+        },
+        "mean_rel_l2_position": 0.011668203528583455,
+        "vector_rmse": 2.6989991673687816,
+        "magnitude_r2_displacement": 0.9997066664418317,
+        "magnitude_rmse_displacement": 1.3057660434878031
+      }
+    },
+    {
+      "case_id": "Run226",
+      "shape": [
+        11,
+        13676,
+        3
+      ],
+      "future_metrics": {
+        "frame_count": 10,
+        "node_count": 13676,
+        "channels": {
+          "X": {
+            "rmse": 0.9188728548752675,
+            "mae": 0.6860549339393176,
+            "r2_position": 0.9998601632875295,
+            "r2_displacement": 0.9998355479721506,
+            "relative_l2_position": 0.01003482115743142,
+            "nrmse_displacement_rms": 0.006705832800501315
+          },
+          "Y": {
+            "rmse": 2.0049389494772876,
+            "mae": 1.5724111793911981,
+            "r2_position": 0.9999893981776453,
+            "r2_displacement": 0.9853400278499408,
+            "relative_l2_position": 0.0032556868755805337,
+            "nrmse_displacement_rms": 0.10588986134481175
+          },
+          "Z": {
+            "rmse": 0.27363512573428656,
+            "mae": 0.18927631517863958,
+            "r2_position": 0.999971593960446,
+            "r2_displacement": 0.9844544034565258,
+            "relative_l2_position": 0.00532957437436052,
+            "nrmse_displacement_rms": 0.11392101267492735
+          }
+        },
+        "mean_rel_l2_position": 0.006206694135790824,
+        "vector_rmse": 2.222382437069207,
+        "magnitude_r2_displacement": 0.9997849191217766,
+        "magnitude_rmse_displacement": 1.031960490902958
+      }
+    },
+    {
+      "case_id": "Run227",
+      "shape": [
+        11,
+        13676,
+        3
+      ],
+      "future_metrics": {
+        "frame_count": 10,
+        "node_count": 13676,
+        "channels": {
+          "X": {
+            "rmse": 1.3529182578722818,
+            "mae": 0.9581125587273992,
+            "r2_position": 0.9997514702854835,
+            "r2_displacement": 0.9997644490219916,
+            "relative_l2_position": 0.012802200978177018,
+            "nrmse_displacement_rms": 0.008612449546241938
+          },
+          "Y": {
+            "rmse": 3.300604654427097,
+            "mae": 2.4625027271349915,
+            "r2_position": 0.9999709727340413,
+            "r2_displacement": 0.9763851048114661,
+            "relative_l2_position": 0.005386798614955368,
+            "nrmse_displacement_rms": 0.13614726343076514
+          },
+          "Z": {
+            "rmse": 0.9585220020497577,
+            "mae": 0.5077453687199098,
+            "r2_position": 0.9996510985313883,
+            "r2_displacement": 0.8307238864909688,
+            "relative_l2_position": 0.01867743421225933,
+            "nrmse_displacement_rms": 0.3641198433231014
+          }
+        },
+        "mean_rel_l2_position": 0.012288811268463906,
+        "vector_rmse": 3.6936625895883837,
+        "magnitude_r2_displacement": 0.9996249746690746,
+        "magnitude_rmse_displacement": 1.6728488726374589
+      }
+    },
+    {
+      "case_id": "Run228",
+      "shape": [
+        11,
+        13676,
+        3
+      ],
+      "future_metrics": {
+        "frame_count": 10,
+        "node_count": 13676,
+        "channels": {
+          "X": {
+            "rmse": 0.9431958914340289,
+            "mae": 0.7188480808916898,
+            "r2_position": 0.9998694358633858,
+            "r2_displacement": 0.999866506873377,
+            "relative_l2_position": 0.00932939618732329,
+            "nrmse_displacement_rms": 0.006256894811803877
+          },
+          "Y": {
+            "rmse": 2.28803748614454,
+            "mae": 1.787591118890597,
+            "r2_position": 0.9999860918336504,
+            "r2_displacement": 0.9879135234198987,
+            "relative_l2_position": 0.003728618235184546,
+            "nrmse_displacement_rms": 0.0948010309472571
+          },
+          "Z": {
+            "rmse": 0.5015098970007321,
+            "mae": 0.34258970863410315,
+            "r2_position": 0.9999046134658648,
+            "r2_displacement": 0.9763910940988874,
+            "relative_l2_position": 0.009749821772864598,
+            "nrmse_displacement_rms": 0.12320415736865026
+          }
+        },
+        "mean_rel_l2_position": 0.007602612065124145,
+        "vector_rmse": 2.525123007778214,
+        "magnitude_r2_displacement": 0.999797649713645,
+        "magnitude_rmse_displacement": 1.1366246878215274
+      }
+    },
+    {
+      "case_id": "Run229",
+      "shape": [
+        11,
+        13676,
+        3
+      ],
+      "future_metrics": {
+        "frame_count": 10,
+        "node_count": 13676,
+        "channels": {
+          "X": {
+            "rmse": 1.1065135509198885,
+            "mae": 0.84171703964097,
+            "r2_position": 0.9998228089964584,
+            "r2_displacement": 0.999817236452835,
+            "relative_l2_position": 0.010725579692595912,
+            "nrmse_displacement_rms": 0.007224577455980253
+          },
+          "Y": {
+            "rmse": 2.871378822003687,
+            "mae": 2.2318017797040666,
+            "r2_position": 0.9999780486813213,
+            "r2_displacement": 0.9845823931486658,
+            "relative_l2_position": 0.004683842487010497,
+            "nrmse_displacement_rms": 0.10428600651884352
+          },
+          "Z": {
+            "rmse": 1.0777854907977384,
+            "mae": 0.6807661513419621,
+            "r2_position": 0.9995592184529256,
+            "r2_displacement": 0.8916755814734295,
+            "relative_l2_position": 0.0209560688865202,
+            "nrmse_displacement_rms": 0.26003624905874595
+          }
+        },
+        "mean_rel_l2_position": 0.012121830355375535,
+        "vector_rmse": 3.260492315892824,
+        "magnitude_r2_displacement": 0.9996837472679412,
+        "magnitude_rmse_displacement": 1.423457008948241
+      }
+    },
+    {
+      "case_id": "Run230",
+      "shape": [
+        11,
+        13676,
+        3
+      ],
+      "future_metrics": {
+        "frame_count": 10,
+        "node_count": 13676,
+        "channels": {
+          "X": {
+            "rmse": 2.1474380425974595,
+            "mae": 1.5971694043162763,
+            "r2_position": 0.9992301159923964,
+            "r2_displacement": 0.9991405257967335,
+            "relative_l2_position": 0.024011861610330223,
+            "nrmse_displacement_rms": 0.01592985870611659
+          },
+          "Y": {
+            "rmse": 7.412999940101809,
+            "mae": 5.742511719893388,
+            "r2_position": 0.9998552847646387,
+            "r2_displacement": 0.7418625204526939,
+            "relative_l2_position": 0.012029299982145128,
+            "nrmse_displacement_rms": 0.4756613960874846
+          },
+          "Z": {
+            "rmse": 0.71895248028122,
+            "mae": 0.44289574370961066,
+            "r2_position": 0.9998031243554373,
+            "r2_displacement": 0.8977618262387224,
+            "relative_l2_position": 0.014018952961871821,
+            "nrmse_displacement_rms": 0.262499354340947
+          }
+        },
+        "mean_rel_l2_position": 0.016686704851449057,
+        "vector_rmse": 7.751190291023223,
+        "magnitude_r2_displacement": 0.999010560653905,
+        "magnitude_rmse_displacement": 2.2631307370978115
+      }
+    }
+  ],
+  "summary": {
+    "case_mean_vector_rmse": 3.516674719071176,
+    "case_mean_displacement_magnitude_r2": 0.9996148202325204,
+    "case_mean_relative_l2_position": 0.010591334998294193
+  }
+}

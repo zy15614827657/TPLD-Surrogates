@@ -1,0 +1,28 @@
+# Local previews and environments
+.local/
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+
+# Training data, checkpoints and credentials do not belong in the showcase
+.env
+.env.*
+*.pem
+*.key
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.npy
+*.h5
+*.hdf5
+*.vtk
+*.vtu
+*.vtp
+*.zip
+data/
+datasets/
+checkpoints/
+runs/

@@ -1,0 +1,21 @@
+{
+  "generated_date": "2026-11-06",
+  "car_validation_cases": 18,
+  "bumper_validation_cases": 7,
+  "bumper": {
+    "case_mean_vector_rmse": 3.516674719071176,
+    "case_mean_displacement_magnitude_r2": 0.9996148202325204,
+    "case_mean_relative_l2_position": 0.010591334998294193
+  },
+  "flow_test_cases": 85,
+  "flow_epoch095_reconstruction": [
+    0.013728960489220727,
+    0.032466776053749216,
+    0.03499866645042547
+  ],
+  "flow_epoch095_one_step": [
+    0.01370178047398568,
+    0.0323991208545181,
+    0.035313500509144204
+  ]
+}

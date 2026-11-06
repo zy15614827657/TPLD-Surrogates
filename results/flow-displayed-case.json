@@ -1,0 +1,39 @@
+{
+  "task": "stage1_autoencoder_reconstruction_of_test_frame",
+  "checkpoint_sha256": "21038b6c6f68744953fee3163eb3260afcd785e577aa2ae255ecd61bbe27a7ff",
+  "checkpoint_epoch": 71,
+  "case_id": "nurbs/87/Re_874",
+  "split": "test",
+  "Re": 874,
+  "frame_index_zero_based": 241,
+  "time_units": "relative frame coordinate, not physical seconds",
+  "field_units": "original stored scale; no verified SI units",
+  "inputs_to_reconstruction": [
+    "geometry",
+    "Re",
+    "true flow at the displayed frame"
+  ],
+  "metrics": {
+    "u": {
+      "rmse": 0.022506949724661565,
+      "mae": 0.011326122351988132,
+      "max_absolute_error": 0.7543787062168121,
+      "relative_l2": 0.025710265465200173,
+      "normalized_mse": 0.004341866285295138
+    },
+    "v": {
+      "rmse": 0.019266552721262112,
+      "mae": 0.009493914333595784,
+      "max_absolute_error": 0.6875084489583969,
+      "relative_l2": 0.04478198415356966,
+      "normalized_mse": 0.002709647135028769
+    },
+    "p": {
+      "rmse": 0.018046001241877448,
+      "mae": 0.00711436495706308,
+      "max_absolute_error": 0.6588279902935028,
+      "relative_l2": 0.04349468804509271,
+      "normalized_mse": 0.004698281076245394
+    }
+  }
+}
