@@ -37,15 +37,15 @@
   </tr>
   <tr>
     <td><a href="docs/flow-reconstruction.md"><img src="assets/flow/gallery/harmonics-17-Re-974/reconstruction.gif" width="100%" alt="多瓣形 Re974：仿真流场与自编码器重建的100帧对比，输入当前真实场" /></a></td>
-    <td><a href="docs/flow-prediction.md"><img src="assets/flow/gallery/nurbs-87-Re-874/prediction.gif" width="100%" alt="不对称形 Re874：仿真与单步预测的100帧对比，每次预测输入两帧真实历史场" /></a></td>
+    <td><a href="docs/flow-prediction.md"><img src="assets/flow/gallery/nurbs-87-Re-874/prediction.gif" width="100%" alt="不对称形 Re874：仿真与单步预测的100帧对比" /></a></td>
   </tr>
   <tr>
     <td><strong>复杂几何下的物理场表示</strong><br/>仿真流场与空间重建同步播放，100 个连续帧、20 fps。四类几何、八个 Re 工况，观察不同尾迹与横向速度结构。<br/><a href="docs/flow-reconstruction.md">不同形状与 Re 的重建图集 →</a> · <a href="docs/flow-cases/harmonics-17-Re-974.md">u / v / p 高清对比</a></td>
-    <td><strong>仿真与单步预测对比</strong><br/>每次输入两帧真实历史流场，展示 100 个连续时刻的单步预测。统一色标对照圆钝形、多瓣形、细长形与不对称形绕流。<br/><a href="docs/flow-prediction.md">不同形状与 Re 的预测动图 →</a> · <a href="docs/flow.md">案例说明</a></td>
+    <td><strong>仿真与单步预测对比</strong><br/>100 个连续时刻，流畅展示仿真与单步预测的流场对比。统一色标对照圆钝形、多瓣形、细长形与不对称形绕流。<br/><a href="docs/flow-prediction.md">不同形状与 Re 的预测动图 →</a> · <a href="docs/flow.md">案例说明</a></td>
   </tr>
 </table>
 
-**读图说明：** 结构案例为条件驱动的后续响应预测；流场重建输入当前真实场；流场单步预测输入前两帧真实场，100 帧动画不表示 100 步自由滚动。流场动画显示横向速度 v，高清图提供 u / v / p。GIF 播放速度用于演示，未进行时间插值。点击流场图片可浏览更多几何与 Re 工况。
+**读图说明：** 结构案例展示后续响应预测；流场案例分别展示空间重建与单步预测对比。流场动画显示横向速度 v，高清图提供 u / v / p。GIF 播放速度用于演示，未进行时间插值。点击流场图片可浏览更多几何与 Re 工况。
 
 <a id="research"></a>
 ## 研究方向
@@ -54,7 +54,7 @@
 | :--- | :--- | :--- |
 | **结构动力学代理模型** | 如何从结构几何、设计参数与初始条件预测非线性瞬态响应？ | 白车身碰撞、保险杠冲击的三维位移场与误差分析 |
 | **物理场空间表示** | 如何在网格与复杂流体域上压缩、重建高维物理场？ | 多尺度空间表示，以及速度、压力重建结果 |
-| **潜空间动力学** | 如何在紧凑表示上学习响应随时间的演化？ | 结构整轨迹预测；Flow 使用真实历史场的单步预测评估 |
+| **潜空间动力学** | 如何在紧凑表示上学习响应随时间的演化？ | 结构整轨迹预测；Flow 单步预测与流场对照 |
 | **物理场对照分析** | 如何观察预测场、真实场与局部误差的空间分布？ | 多视角云图、时序动画与素材来源 |
 
 <img src="assets/branding/workflow.svg" width="100%" alt="研究流程：几何与工况、空间表示、时间演化、全场响应；具体输入条件以各案例文档为准" />

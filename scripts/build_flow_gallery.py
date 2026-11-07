@@ -73,7 +73,7 @@ def scientific_frame(true, model, mask, meta, index, task, limit):
         d.text((1053, y), f"{v:.1f}", font=font(14), fill=NAVY)
     d.text((1032, 102), "v", font=font(17, True), fill=NAVY)
     d.line((28, 699, 1072, 699), fill="#d7e4eb", width=1)
-    note = "Inputs: geometry, Re + two true historical fields" if task == "prediction" else "Inputs: geometry, Re + true field at the displayed time"
+    note = "Simulation vs one-step prediction | 100 frames | 20 fps" if task == "prediction" else "Inputs: geometry, Re + true field at the displayed time"
     d.text((29, 711), note, font=font(17), fill="#536b79")
     return im
 
@@ -113,7 +113,7 @@ def full_comparison(truth, model, mask, meta, task, path):
             ax.set_title(f"{name} | {title}",loc="left",fontsize=12)
             ax.set_xlabel("x");ax.set_ylabel("y")
             fig.colorbar(pic,ax=ax,shrink=.70,pad=.025)
-    note="Two true preceding fields enter each prediction" if task=="prediction" else "Current true field enters reconstruction"
+    note="Simulation / one-step prediction / absolute error" if task=="prediction" else "Current true field enters reconstruction"
     fig.suptitle(meta["case_id"]+" | saved frame 242 | "+note+"\nOriginal stored field units; matched color scales for simulation and model",fontsize=15)
     fig.savefig(path,dpi=120);plt.close(fig)
 
@@ -123,11 +123,11 @@ def case_doc(slug, meta, shape, feature):
 
 [主页](../../README.md) · [绕流预测图集](../flow-prediction.md) · [流场重建图集](../flow-reconstruction.md)
 
-该工况来自固定测试集。关注：{feature}。几何与 Re 是共同的静态条件；下列两个任务的流场输入不同。
+该工况来自固定测试集。关注：{feature}。下方分别展示单步预测与空间重建的流场对比。
 
 ## 仿真与单步预测
 
-每次预测输入前两帧真实流场及实际查询间隔。动画连续展示 100 个时刻的单步预测，不是 100 步自由滚动。
+仿真与单步预测逐帧对照，连续展示 100 个保存时刻。
 
 ![仿真与单步预测的100帧对比](../../assets/flow/gallery/{slug}/prediction.gif)
 
@@ -148,7 +148,7 @@ def case_doc(slug, meta, shape, feature):
 def gallery_doc(task, cases):
     prediction=task=="prediction"
     heading="绕流演化：仿真与单步预测" if prediction else "流场重建：不同形状与雷诺数"
-    intro=("每次预测使用几何、Re、前两帧真实流场和实际时间间隔。这里连续展示 100 个单步预测结果，未进行长期自由滚动。" if prediction else
+    intro=("对比不同物体形状与雷诺数下的仿真流场和单步预测结果，观察尾迹随时间的变化。" if prediction else
            "每个时刻将真实流场输入自编码器，比较仿真场与重建场，观察不同几何和 Re 下的空间表示能力。")
     other="flow-reconstruction.md" if prediction else "flow-prediction.md"
     text=f'''# {heading}
@@ -176,6 +176,8 @@ def gallery_doc(task, cases):
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument("--exports",type=Path,required=True)
+    p.add_argument("--tasks",nargs="+",choices=["prediction","reconstruction"],default=["prediction","reconstruction"],
+                   help="Render only selected task assets; retain existing assets for other tasks")
     args=p.parse_args()
     ASSETS.mkdir(parents=True,exist_ok=True)
     (ROOT/"docs/flow-cases").mkdir(exist_ok=True)
@@ -201,10 +203,15 @@ def main():
             for task in ["prediction","reconstruction"]:
                 values=z[task]
                 assert values.shape==truth.shape and np.isfinite(values).all()
-                frames=[scientific_frame(truth[i,...,1],values[i,...,1],mask,meta,i,task,limit) for i in range(100)]
-                save_gif(frames,dest/(task+".gif"))
-                frames[-1].save(dest/(task+"-preview.png"),optimize=True)
-                full_comparison(truth,values,mask,meta,task,dest/(task+"-fields.png"))
+                if task in args.tasks:
+                    frames=[scientific_frame(truth[i,...,1],values[i,...,1],mask,meta,i,task,limit) for i in range(100)]
+                    save_gif(frames,dest/(task+".gif"))
+                    frames[-1].save(dest/(task+"-preview.png"),optimize=True)
+                    full_comparison(truth,values,mask,meta,task,dest/(task+"-fields.png"))
+                else:
+                    for suffix in [".gif","-preview.png","-fields.png"]:
+                        if not (dest/(task+suffix)).is_file():
+                            raise FileNotFoundError(f"Missing retained task asset: {task+suffix}; render both tasks first")
                 delta=(values[:,mask]-truth[:,mask]).astype(np.float64)
                 metrics[task]=np.sqrt((delta**2).sum(axis=(0,1))/(truth[:,mask].astype(np.float64)**2).sum(axis=(0,1))).tolist()
             meta.update(slug=slug,shape=shape,feature=feature,
