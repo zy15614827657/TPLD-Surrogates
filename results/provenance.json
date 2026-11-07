@@ -387,6 +387,390 @@
       "frames": 1
     },
     {
+      "path": "assets/flow/gallery/harmonics-17-Re-166/prediction-fields.png",
+      "bytes": 597731,
+      "sha256": "a2eea21930ec7f96e7b29e242e90a94f3d7d518c32054051e973917c90e55fd3",
+      "width": 2160,
+      "height": 936,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/harmonics-17-Re-166/prediction-preview.png",
+      "bytes": 93794,
+      "sha256": "9f4e7d97ff18d98ab1e03336ee602352a5a785e57adaf3a5604a5b4ece3103cb",
+      "width": 1100,
+      "height": 748,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/harmonics-17-Re-166/prediction.gif",
+      "bytes": 7557440,
+      "sha256": "31d6c32160ddbc1dc4d7b509689fe7d153ed85678a436017a57310c5c0e6794e",
+      "width": 800,
+      "height": 544,
+      "frames": 100
+    },
+    {
+      "path": "assets/flow/gallery/harmonics-17-Re-166/reconstruction-fields.png",
+      "bytes": 595473,
+      "sha256": "96ddfb4b92830325f8ccbdc5eed5201c698a7797eb86191ac5887e60ca8a8f79",
+      "width": 2160,
+      "height": 936,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/harmonics-17-Re-166/reconstruction-preview.png",
+      "bytes": 93653,
+      "sha256": "bea79870392fd8306f15d4f58a318e818b657ba85d0dcf1a37ffebaeb540058b",
+      "width": 1100,
+      "height": 748,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/harmonics-17-Re-166/reconstruction.gif",
+      "bytes": 7566501,
+      "sha256": "335f67e771e778f98b2cc4ba52ad6087bc5d6097220addff592c8ecc29d932bc",
+      "width": 800,
+      "height": 544,
+      "frames": 100
+    },
+    {
+      "path": "assets/flow/gallery/harmonics-17-Re-974/prediction-fields.png",
+      "bytes": 608788,
+      "sha256": "27c7f5fdbc9dab558a3f4effe2217104108365b95fee3416cf48e90014f52d3c",
+      "width": 2160,
+      "height": 936,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/harmonics-17-Re-974/prediction-preview.png",
+      "bytes": 108991,
+      "sha256": "9f1a0f39355ea9d7d49c32aab7fd6cd0f5b982d5d00a289d3d6da750bd6b9ab0",
+      "width": 1100,
+      "height": 748,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/harmonics-17-Re-974/prediction.gif",
+      "bytes": 7557072,
+      "sha256": "c6be0a7f362d690ff2812a96c17e25ec021831f5c1cba717f9601a1f3aa44f6b",
+      "width": 800,
+      "height": 544,
+      "frames": 100
+    },
+    {
+      "path": "assets/flow/gallery/harmonics-17-Re-974/reconstruction-fields.png",
+      "bytes": 605264,
+      "sha256": "1b02499240b1cd28033310f691a0af028be6c3572e0a2af2547e3455c24a3253",
+      "width": 2160,
+      "height": 936,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/harmonics-17-Re-974/reconstruction-preview.png",
+      "bytes": 108810,
+      "sha256": "ed21a12e689f897f0684b0676f5e848291ac682174910e8684d0288c7fba3df5",
+      "width": 1100,
+      "height": 748,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/harmonics-17-Re-974/reconstruction.gif",
+      "bytes": 7590226,
+      "sha256": "00ee27c007798a2dbaebcd72938cf48cc9b4abdb5d66cea1a0a0ce3522b2e8fd",
+      "width": 800,
+      "height": 544,
+      "frames": 100
+    },
+    {
+      "path": "assets/flow/gallery/harmonics-92-Re-272/prediction-fields.png",
+      "bytes": 655699,
+      "sha256": "49054c786d0963a501884360a6db5cb98f0e9ada6cd4274fee9756e8b92e8375",
+      "width": 2160,
+      "height": 936,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/harmonics-92-Re-272/prediction-preview.png",
+      "bytes": 100209,
+      "sha256": "8636dbe26161c42011c455c50a9e12d88dca9a089e80534e8ac27893bd6e5d76",
+      "width": 1100,
+      "height": 748,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/harmonics-92-Re-272/prediction.gif",
+      "bytes": 7756051,
+      "sha256": "0feba17c4baedd02cda4a6971d31670a8e742bc2815a5fdddd50401cc8e52047",
+      "width": 800,
+      "height": 544,
+      "frames": 100
+    },
+    {
+      "path": "assets/flow/gallery/harmonics-92-Re-272/reconstruction-fields.png",
+      "bytes": 649079,
+      "sha256": "59e2405cc9bffb550b753ccb806bb3c203f05b2b6090d779c8d7754972e91f71",
+      "width": 2160,
+      "height": 936,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/harmonics-92-Re-272/reconstruction-preview.png",
+      "bytes": 99780,
+      "sha256": "b5cd9dadb17affa4387ab1fbc7dd3ceda4c876e12f95899d232f249f9acd4dff",
+      "width": 1100,
+      "height": 748,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/harmonics-92-Re-272/reconstruction.gif",
+      "bytes": 7753867,
+      "sha256": "702d36ce949d47e5efe00dfe584b43359c45a4de5ff490758e870dd22ab86b3f",
+      "width": 800,
+      "height": 544,
+      "frames": 100
+    },
+    {
+      "path": "assets/flow/gallery/harmonics-92-Re-411/prediction-fields.png",
+      "bytes": 661088,
+      "sha256": "863c918dc6a8f2df6c99f21d15af6ffc4eb84003d223c62d2a6e6327c4e92cbe",
+      "width": 2160,
+      "height": 936,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/harmonics-92-Re-411/prediction-preview.png",
+      "bytes": 103638,
+      "sha256": "e518dc8be1f5b3af710ca736e2e7e698b7881ce1486c90ad298cfd637bbc209f",
+      "width": 1100,
+      "height": 748,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/harmonics-92-Re-411/prediction.gif",
+      "bytes": 7963175,
+      "sha256": "3a18f4b172d618d1385a5a71aa0f3294a0eea98814fb9f76204ef27c4e32f13b",
+      "width": 800,
+      "height": 544,
+      "frames": 100
+    },
+    {
+      "path": "assets/flow/gallery/harmonics-92-Re-411/reconstruction-fields.png",
+      "bytes": 649236,
+      "sha256": "bda6cebb7f46d151e8cb8fa905f6ae82ff80184a74dc7395ad11b1421cc1939e",
+      "width": 2160,
+      "height": 936,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/harmonics-92-Re-411/reconstruction-preview.png",
+      "bytes": 103261,
+      "sha256": "e9cc60f455c62903cef7c61cc12852108dd98a8b824ec3ccd9aa7641e9130d23",
+      "width": 1100,
+      "height": 748,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/harmonics-92-Re-411/reconstruction.gif",
+      "bytes": 7994532,
+      "sha256": "ec5e2c23f2026edd12b165e0865c99d50765f7456e44230df70f8086c9fdb71b",
+      "width": 800,
+      "height": 544,
+      "frames": 100
+    },
+    {
+      "path": "assets/flow/gallery/nurbs-62-Re-179/prediction-fields.png",
+      "bytes": 647167,
+      "sha256": "2320a815341a71d78d6d1c8442c5c56f5ad83c417c46d6c28cdc17329b60dbdd",
+      "width": 2160,
+      "height": 936,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/nurbs-62-Re-179/prediction-preview.png",
+      "bytes": 99540,
+      "sha256": "b827e472c8f3bd78e030bc45899f188983fe69b7db7d666951753b717318c0fe",
+      "width": 1100,
+      "height": 748,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/nurbs-62-Re-179/prediction.gif",
+      "bytes": 8031090,
+      "sha256": "f74f00141530f378c4e4b69d930618589f163528358bf0212c4f8a2e8599154a",
+      "width": 800,
+      "height": 544,
+      "frames": 100
+    },
+    {
+      "path": "assets/flow/gallery/nurbs-62-Re-179/reconstruction-fields.png",
+      "bytes": 641964,
+      "sha256": "71e85efe2927d07c13219b4e3497bee75315cbf2e983b3790a373d1b6c58fc7c",
+      "width": 2160,
+      "height": 936,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/nurbs-62-Re-179/reconstruction-preview.png",
+      "bytes": 99185,
+      "sha256": "87225e006064f256e2b4a1865cff886b5309742bafa41892cb49a29af9e52e60",
+      "width": 1100,
+      "height": 748,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/nurbs-62-Re-179/reconstruction.gif",
+      "bytes": 7995390,
+      "sha256": "0f60b0a8b1a5f99b4966f40d18fc72196196eea1e059a898a9205f0c18be50b8",
+      "width": 800,
+      "height": 544,
+      "frames": 100
+    },
+    {
+      "path": "assets/flow/gallery/nurbs-62-Re-979/prediction-fields.png",
+      "bytes": 656738,
+      "sha256": "504186957e45beac0dff992217b19deaa198cfdde99f10b7bb309afe4964f58c",
+      "width": 2160,
+      "height": 936,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/nurbs-62-Re-979/prediction-preview.png",
+      "bytes": 104312,
+      "sha256": "c79cf5cbb4173fe188f3573e2e4fb420ae692f92a72d3193c3f05dc4f5945b98",
+      "width": 1100,
+      "height": 748,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/nurbs-62-Re-979/prediction.gif",
+      "bytes": 7255178,
+      "sha256": "96ccad7a9a0669244bcc844781ee0d7d54610b896c98f338a0685b9afcda8d6e",
+      "width": 800,
+      "height": 544,
+      "frames": 100
+    },
+    {
+      "path": "assets/flow/gallery/nurbs-62-Re-979/reconstruction-fields.png",
+      "bytes": 652019,
+      "sha256": "d92ff5fe5ea6937cf65c953843ffc39192f79d8e6c1bf2dead9ba59a8b1b1510",
+      "width": 2160,
+      "height": 936,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/nurbs-62-Re-979/reconstruction-preview.png",
+      "bytes": 103979,
+      "sha256": "d116fc5d38dfa46ffcb912fa350ce04178a71204bef8e87b40facafc62c8a3a9",
+      "width": 1100,
+      "height": 748,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/nurbs-62-Re-979/reconstruction.gif",
+      "bytes": 7261423,
+      "sha256": "2fe08c1241b7ca4cf66078dbbe146ef3596c1a16fdc3b7b7715412444624fcd2",
+      "width": 800,
+      "height": 544,
+      "frames": 100
+    },
+    {
+      "path": "assets/flow/gallery/nurbs-87-Re-311/prediction-fields.png",
+      "bytes": 699836,
+      "sha256": "9b23de4f8efce7944db414e16a4300cfef901837f84fb76f4eb0e7a10f02aeaf",
+      "width": 2160,
+      "height": 936,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/nurbs-87-Re-311/prediction-preview.png",
+      "bytes": 112963,
+      "sha256": "01ecd042938e0c9a490b0a9c053c767cf8d7d41da9068a66e57e88a2d10c170a",
+      "width": 1100,
+      "height": 748,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/nurbs-87-Re-311/prediction.gif",
+      "bytes": 8559164,
+      "sha256": "4969273257717909efee759f512615b2792bece97b9ed181cd8e81481a6517ab",
+      "width": 800,
+      "height": 544,
+      "frames": 100
+    },
+    {
+      "path": "assets/flow/gallery/nurbs-87-Re-311/reconstruction-fields.png",
+      "bytes": 693528,
+      "sha256": "df2504d310318df651cc5c2543f461a33a84a57c6e00440a747e272b02eb16ea",
+      "width": 2160,
+      "height": 936,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/nurbs-87-Re-311/reconstruction-preview.png",
+      "bytes": 112629,
+      "sha256": "90e3effb6b9071a530144b5345c926ba0405a485c2f1c4949ed5d32d2de4fc53",
+      "width": 1100,
+      "height": 748,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/nurbs-87-Re-311/reconstruction.gif",
+      "bytes": 8701619,
+      "sha256": "0faff74ce421302040fc59a9a9d38db1051ba954aed8403fb08578620a1d4bb4",
+      "width": 800,
+      "height": 544,
+      "frames": 100
+    },
+    {
+      "path": "assets/flow/gallery/nurbs-87-Re-874/prediction-fields.png",
+      "bytes": 656213,
+      "sha256": "cc8938253d570d191109df5f5920c41c273c45e483a30c1b284b455a1a9bb0e9",
+      "width": 2160,
+      "height": 936,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/nurbs-87-Re-874/prediction-preview.png",
+      "bytes": 121427,
+      "sha256": "ca798232645bc82221cd20600d2b6efaf0e93acfd48b41bda6c5462fbbc23e20",
+      "width": 1100,
+      "height": 748,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/nurbs-87-Re-874/prediction.gif",
+      "bytes": 9680620,
+      "sha256": "8da8277c0be185e0742a3b970c603a943caaae39d82fa2b3c4cdf73cfa57cea1",
+      "width": 800,
+      "height": 544,
+      "frames": 100
+    },
+    {
+      "path": "assets/flow/gallery/nurbs-87-Re-874/reconstruction-fields.png",
+      "bytes": 651535,
+      "sha256": "9df40956540fdeeef79c325b9b079890f16648c01fd6ba17e1fd7263655f12e9",
+      "width": 2160,
+      "height": 936,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/nurbs-87-Re-874/reconstruction-preview.png",
+      "bytes": 120968,
+      "sha256": "7cd7a45d8e5c487e8b4967b4eb5fb43f820fa007e65af9908a9077543f9456a4",
+      "width": 1100,
+      "height": 748,
+      "frames": 1
+    },
+    {
+      "path": "assets/flow/gallery/nurbs-87-Re-874/reconstruction.gif",
+      "bytes": 9729841,
+      "sha256": "1d1fa6f05ee1409ee60ed050a472847e9c7a9a541bcedfd2fe977a82aa5812db",
+      "width": 800,
+      "height": 544,
+      "frames": 100
+    },
+    {
       "path": "assets/flow/reconstruction-full.png",
       "bytes": 1923076,
       "sha256": "06743ca041a490eb38820e908c41753f9345c6ea85d09a707fad3406c28534d8",
@@ -452,9 +836,19 @@
       "sha256": "c413f74e92c24a4c3481c293339b86c670ee407b7c954a60482113b12789da59"
     },
     {
+      "path": "results/flow-gallery.json",
+      "bytes": 27235,
+      "sha256": "cd0f24252b51498e7c7115b2548c4c547ec74c4d9a8ff587f94b3f79beedd8cb"
+    },
+    {
       "path": "results/summary.json",
       "bytes": 539,
       "sha256": "16f3c811d52cd995cb7a521474c94e832efb4adacc61e7283c3ec81a7219a681"
     }
-  ]
+  ],
+  "flow_gallery": {
+    "record": "results/flow-gallery.json",
+    "build_script": "scripts/build_flow_gallery.py",
+    "export_script": "scripts/export_flow_gallery.py"
+  }
 }

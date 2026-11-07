@@ -50,13 +50,25 @@ def main():
             check(not re.search(r"\b[A-Za-z]:[\\/](?:Users|Documents and Settings)[\\/]|/data/ZhangYuan/|gh[pousr]_[A-Za-z0-9]{20,}", text), f"Machine path or token-like text in publication: {path.name}")
 
     gif_details = []
-    for rel, expected in [("assets/car-crash/prediction.gif", 13), ("assets/bumper/prediction.gif", 11), ("assets/flow/reference-snapshots.gif", 4)]:
+    gif_specs = [("assets/car-crash/prediction.gif", 13), ("assets/bumper/prediction.gif", 11), ("assets/flow/reference-snapshots.gif", 4)]
+    gallery_path = ROOT / "results/flow-gallery.json"
+    if gallery_path.exists():
+        gallery = json.loads(gallery_path.read_text(encoding="utf-8"))
+        for case in gallery["cases"]:
+            indices = case["frame_indices"]
+            check(len(indices) == 100 and all(b-a == 1 for a,b in zip(indices,indices[1:])), f"Nonconsecutive flow frames: {case['case_id']}")
+            check(case["split"] == "test" and not case["autoregressive_rollout"], f"Invalid gallery task metadata: {case['case_id']}")
+            for task in ["prediction", "reconstruction"]:
+                gif_specs.append((f"assets/flow/gallery/{case['slug']}/{task}.gif", 100))
+    for rel, expected in gif_specs:
         with Image.open(ROOT / rel) as im:
             check(im.n_frames == expected, f"Unexpected GIF frame count: {rel}")
             check(im.info.get("loop") == 0, f"GIF does not loop: {rel}")
             hashes = set()
             for frame in ImageSequence.Iterator(im):
                 check(frame.info.get("duration", 0) > 0, f"Missing frame timing: {rel}")
+                if expected == 100:
+                    check(frame.info.get("duration") == 50, f"Flow GIF is not 20 fps: {rel}")
                 hashes.add(hashlib.sha256(frame.convert("RGB").tobytes()).hexdigest())
             check(len(hashes) == expected, f"Duplicate frames in GIF: {rel}")
             gif_details.append({"path": rel, "frames": im.n_frames, "bytes": (ROOT/rel).stat().st_size})

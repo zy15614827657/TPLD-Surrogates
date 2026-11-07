@@ -1,6 +1,4 @@
 <div align="center">
-  <img src="assets/branding/hero.svg" width="100%" alt="TPLD-Surrogates — AI surrogate models for structural and fluid dynamics" />
-
   <h1>TPLD-Surrogates</h1>
   <p><strong>面向结构动力学与流体动力学的人工智能代理模型</strong></p>
   <p>从几何与工况，到随时间演化的物理场。</p>
@@ -35,19 +33,19 @@
   </tr>
   <tr>
     <th>流场重建 · Flow Reconstruction</th>
-    <th>绕流演化 · Reference Flow</th>
+    <th>绕流演化 · Flow Prediction</th>
   </tr>
   <tr>
-    <td><a href="docs/flow.md"><img src="assets/flow/reconstruction-preview.png" width="100%" alt="Flow Epoch 71 流场自编码器重建：真实值、重建值及误差；此任务输入真实流场" /></a></td>
-    <td><a href="docs/flow.md"><img src="assets/flow/reference-snapshots.gif" width="100%" alt="FlowBench harmonics/1 Re603 原始仿真速度场的4个实际时间快照轮播，不是模型预测" /></a></td>
+    <td><a href="docs/flow-reconstruction.md"><img src="assets/flow/gallery/harmonics-17-Re-974/reconstruction.gif" width="100%" alt="多瓣形 Re974：仿真流场与自编码器重建的100帧对比，输入当前真实场" /></a></td>
+    <td><a href="docs/flow-prediction.md"><img src="assets/flow/gallery/nurbs-87-Re-874/prediction.gif" width="100%" alt="不对称形 Re874：仿真与单步预测的100帧对比，每次预测输入两帧真实历史场" /></a></td>
   </tr>
   <tr>
-    <td><strong>复杂几何下的物理场表示</strong><br/>二维速度与压力的空间压缩和重建。此图采用 Epoch 71，并输入当前帧真实场。<br/><a href="docs/flow.md">案例说明 →</a> · <a href="assets/flow/reconstruction-full.png">u / v / p 高清对比</a></td>
-    <td><strong>原始仿真数据展示</strong><br/>Re = 603，1024 × 256 网格。轮播 4 个实际保存快照，展示绕流与尾迹结构。<br/><a href="assets/flow/reference-time-sequence.png">速度与压力时间快照 →</a></td>
+    <td><strong>复杂几何下的物理场表示</strong><br/>仿真流场与空间重建同步播放，100 个连续帧、20 fps。四类几何、八个 Re 工况，观察不同尾迹与横向速度结构。<br/><a href="docs/flow-reconstruction.md">不同形状与 Re 的重建图集 →</a> · <a href="docs/flow-cases/harmonics-17-Re-974.md">u / v / p 高清对比</a></td>
+    <td><strong>仿真与单步预测对比</strong><br/>每次输入两帧真实历史流场，展示 100 个连续时刻的单步预测。统一色标对照圆钝形、多瓣形、细长形与不对称形绕流。<br/><a href="docs/flow-prediction.md">不同形状与 Re 的预测动图 →</a> · <a href="docs/flow.md">案例说明</a></td>
   </tr>
 </table>
 
-**读图说明：** 结构案例为条件驱动的后续响应预测；Flow 对比图为自编码器重建；右下动图为原始仿真数据。GIF 播放速度用于演示，未在时间上插值。点击图片可查看任务定义与完整结果。
+**读图说明：** 结构案例为条件驱动的后续响应预测；流场重建输入当前真实场；流场单步预测输入前两帧真实场，100 帧动画不表示 100 步自由滚动。流场动画显示横向速度 v，高清图提供 u / v / p。GIF 播放速度用于演示，未进行时间插值。点击流场图片可浏览更多几何与 Re 工况。
 
 <a id="research"></a>
 ## 研究方向
