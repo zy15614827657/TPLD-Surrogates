@@ -2,24 +2,23 @@
 
 [返回主页](../README.md) · [English overview](../README.en.md)
 
-![保险杠Stage 2整轨迹预测与真实值对比](../assets/bumper/prediction.gif)
+![保险杠整轨迹预测与真实值对比](../assets/bumper/prediction.gif)
 
 ## 任务与评估范围
 
-Stage 2 只使用静态工况、已知初始网格和时间轴预测整条轨迹，不使用真实未来响应。网络输出绝对位置 `P`，位移按 `U=P−X0` 计算。
+模型只使用静态工况、已知初始网格和时间轴预测整条轨迹，不使用真实未来响应。网络输出绝对位置 `P`，位移按 `U=P−X0` 计算。
 
 | 项目 | 内容 |
 | :--- | :--- |
 | 本地研究项目 | `131_bumper` |
 | 图册版本 | `Bumper_Visualization`，2026-10-29 |
-| 模型 | Stage 2，最佳检查点第 615 轮；训练日志共 800 轮 |
 | 验证工况 | Run224–Run230，共 7 个独立验证工况 |
 | 网格 | 每工况 13,676 个节点 |
 | 时间帧 | 0、10、…、100，共 11 帧；采用源时间单位 |
 | 单位 | 源长度单位与源时间单位；数据来源未确认 mm/ms |
 | 演示工况 | Run227 |
 
-Stage 1 将真实响应编码后重建，用于衡量空间表示能力；Stage 2 执行条件驱动的未来预测。两阶段的输入不同。本页展示 Stage 2。
+本页展示条件驱动的未来响应预测。空间重建任务需要将真实响应输入编码器，两者使用的输入信息不同。
 
 ## 高清云图
 
@@ -43,8 +42,8 @@ Stage 1 将真实响应编码后重建，用于衡量空间表示能力；Stage 
 
 ![Run227的逐帧位移R²](../assets/bumper/r2-curve.png)
 
-- [Stage 2 各工况完整未来帧指标](../results/bumper-stage2.json)
-- [两阶段逐帧 R²、SSE、SST、RMSE 与 MAE](../results/bumper-per-frame.csv)（按 `stage` 字段区分）
+- [整轨迹预测的各工况未来帧指标](../results/bumper-stage2.json)
+- [空间重建与整轨迹预测的逐帧误差记录](../results/bumper-per-frame.csv)
 - [素材来源与 SHA-256](../results/provenance.json)
 
 全部验证推理使用 CPU、FP32；这些结果反映当前检查点在已记录验证工况上的表现。

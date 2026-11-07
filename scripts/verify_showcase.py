@@ -61,16 +61,6 @@ def main():
             check(len(hashes) == expected, f"Duplicate frames in GIF: {rel}")
             gif_details.append({"path": rel, "frames": im.n_frames, "bytes": (ROOT/rel).stat().st_size})
 
-    summary = json.loads((ROOT / "results/summary.json").read_text(encoding="utf-8"))
-    expected_numbers = [f'{summary["bumper"]["case_mean_displacement_magnitude_r2"]:.6f}',
-                        f'{summary["bumper"]["case_mean_vector_rmse"]:.4f}']
-    for key in ["flow_epoch095_reconstruction", "flow_epoch095_one_step"]:
-        expected_numbers += [f"{value*100:.3f}%" for value in summary[key]]
-    for name in ["README.md", "README.en.md"]:
-        text = (ROOT / name).read_text(encoding="utf-8")
-        for value in expected_numbers:
-            check(value in text, f"README headline does not match evidence: {name}: {value}")
-
     report = {"passed": not failures, "files": len(paths), "local_links_checked": links_checked,
               "total_mib": round(sum(p.stat().st_size for p in paths)/1024**2, 2), "gifs": gif_details,
               "asset_hashes_checked": len(provenance["outputs"]), "failures": failures}

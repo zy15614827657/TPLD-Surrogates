@@ -15,12 +15,12 @@
 ## 仓库结构
 
 ```text
-TSYG-Surrogates/
+TPLD-Surrogates/
 ├── README.md                  # 中文主页
 ├── README.en.md               # 英文主页
 ├── assets/
 │   ├── branding/              # 横幅与方法示意图
-│   ├── car-crash/             # GIF、完整对比图、R²曲线
+│   ├── car-crash/             # GIF、完整对比图
 │   ├── bumper/                # GIF、完整对比图、R²曲线
 │   └── flow/                  # 重建对比与原始流场快照
 ├── docs/                      # 案例、评估口径与方法

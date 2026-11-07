@@ -119,9 +119,9 @@ def main():
     car_case, bumper_case = "yaris_x00063", "Run227"
     animation_jobs = [
         (crash / "figures" / car_case, "car-crash", (0, 90, 2160, 666),
-         "VEHICLE CRASH", car_case, "Stage 3 | 136,727 BIW nodes | displacement magnitude (mm)"),
+         "VEHICLE CRASH", car_case, "136,727 BIW nodes | displacement magnitude (mm)"),
         (bumper / "figures/stage2" / bumper_case, "bumper", (0, 100, 1920, 574),
-         "BUMPER IMPACT", bumper_case, "Stage 2 | 13,676 nodes | displacement magnitude (source units)"),
+         "BUMPER IMPACT", bumper_case, "13,676 nodes | displacement magnitude (source units)"),
     ]
     for folder, name, crop, title, case, footer in animation_jobs:
         paths = sorted(folder.glob("frame_*_displacement.png"))
@@ -141,8 +141,8 @@ def main():
         save_gif(frames, dest / "prediction.gif", [180] * (len(frames) - 1) + [1000])
         frames[-1].save(dest / "preview.png", optimize=True)
         copied(paths[-1], dest / "full-comparison.png")
-        curve = crash / "curves" / f"{case}_r2.png" if name == "car-crash" else bumper / "curves/stage2" / f"{case}_r2.png"
-        copied(curve, dest / "r2-curve.png")
+        if name == "bumper":
+            copied(bumper / "curves/stage2" / f"{case}_r2.png", dest / "r2-curve.png")
         transforms.append({"output": f"assets/{name}/prediction.gif", "case": case,
                            "sources": [p.relative_to(root).as_posix() for p in paths],
                            "crop_box_xyxy": crop, "frames": len(frames),
@@ -218,14 +218,6 @@ def main():
 
     # Evidence exports are allowlisted to avoid copying machine paths or operational logs.
     car_manifest = read_json(source(crash / "gallery_manifest.json"))
-    car_metrics = read_json(source(crash / "r2_metrics.json"))
-    car_evidence = {k: car_manifest[k] for k in ["checkpoint_epoch", "checkpoint_sha256", "checkpoint_stage",
-                    "completed_training_epochs", "total_training_epochs", "case_ids", "case_count", "node_count",
-                    "triangles_count", "mesh_decimated", "deformation_scale"]}
-    car_evidence.update({"task": "condition-only future displacement prediction", "split": "validation",
-                        "definition": car_metrics["definition"], "cases": car_metrics["cases"]})
-    write_json(RESULTS / "car-crash.json", car_evidence)
-    copied(crash / "r2_per_case_frame.csv", RESULTS / "car-crash-per-frame.csv")
 
     bumper_metrics = read_json(source(bumper / "stage2_summary.json"))
     bumper_evidence = {k: bumper_metrics[k] for k in ["stage", "task", "case_ids", "case_count", "metric_frame_scope",
@@ -251,9 +243,9 @@ def main():
     write_json(RESULTS / "flow-displayed-case.json", {k:sample_meta[k] for k in ["task", "checkpoint_sha256", "checkpoint_epoch",
                 "case_id", "split", "Re", "frame_index_zero_based", "time_units", "field_units", "inputs_to_reconstruction", "metrics"]})
 
-    # Compact, reproducible headline values; README numbers are checked against these.
+    # Compact numeric archive for the case documentation.
     report = {
-        "generated_date": "2026-11-06", "car_validation_cases": car_evidence["case_count"],
+        "generated_date": "2026-11-06", "car_validation_cases": car_manifest["case_count"],
         "bumper_validation_cases": bumper_evidence["case_count"], "bumper": bumper_evidence["summary"],
         "flow_test_cases": f95["case_count"], "flow_epoch095_reconstruction": f95["overall"]["reconstruction"]["relative_l2_original"],
         "flow_epoch095_one_step": f95["overall"]["one_step"]["relative_l2_original"],

@@ -1,16 +1,16 @@
 <div align="center">
-  <img src="assets/branding/hero.svg" width="100%" alt="TSYG-Surrogates — AI surrogate models for structural and fluid dynamics" />
-  <h1>TSYG-Surrogates</h1>
+  <img src="assets/branding/hero.svg" width="100%" alt="TPLD-Surrogates — AI surrogate models for structural and fluid dynamics" />
+  <h1>TPLD-Surrogates</h1>
   <p><strong>AI surrogate models for structural and fluid dynamics</strong></p>
   <p>From geometry and conditions to time-dependent physical fields.</p>
-  <p><a href="#showcase">Showcase</a> · <a href="#results">Evaluation</a> · <a href="docs/methodology.md">Methodology</a> · <a href="CONTRIBUTING.md">Contributing</a></p>
+  <p><a href="#showcase">Showcase</a> · <a href="#research">Research</a> · <a href="docs/methodology.md">Methodology</a> · <a href="CONTRIBUTING.md">Contributing</a></p>
   <p><a href="README.md">简体中文</a> | <strong>English</strong></p>
 </div>
 
-**TSYG-Surrogates** presents [TSYGAI](https://github.com/TSYGAI)'s research in surrogate modeling for vehicle crash, structural impact, and flow around complex geometries. Our work explores spatial representations, latent dynamics, and full-field response prediction. Every result identifies its task, checkpoint, and evaluation scope.
+**TPLD-Surrogates** presents [TSYGAI](https://github.com/TSYGAI)'s research in surrogate modeling for vehicle crash, structural impact, and flow around complex geometries. Our work explores spatial representations, latent dynamics, and full-field response prediction. The showcase presents research cases, high-resolution field plots, and animations, with the inputs, task, physical quantities, and units explained in each case study.
 
 <a id="showcase"></a>
-## TSYG-Surrogates in Action
+## TPLD-Surrogates in Action
 
 <table>
 <tr><th width="50%">Vehicle Crash</th><th width="50%">Bumper Impact</th></tr>
@@ -23,6 +23,7 @@
 
 Structural animations show predictions from known conditions. The flow comparison is true-field-conditioned reconstruction. The flow animation shows reference simulation data. Playback is slowed for presentation; no intermediate states are synthesized.
 
+<a id="research"></a>
 ## Research Focus
 
 - Predict nonlinear structural responses from geometry, design variables, and initial conditions.
@@ -32,20 +33,17 @@ Structural animations show predictions from known conditions. The flow compariso
 
 <img src="assets/branding/workflow.svg" width="100%" alt="Geometry and conditions to spatial representations, temporal modeling, and full-field responses" />
 
-<a id="results"></a>
-## Evaluation Snapshot
+## Full-field Temporal Surrogate Models
 
-| Task / checkpoint | Evaluation scope | Verified result |
-| :--- | :--- | :--- |
-| Car Crash · Stage 3 | 18 validation cases; 13 frames per case | 136,727 nodes; 248,601 triangles; per-case, per-frame spatial R² provided |
-| Bumper · Stage 2 | 7 validation cases; 10 future frames per case | Mean per-case displacement-magnitude R² **0.999615**; mean vector RMSE **3.5167 source length units** |
-| Flow · Epoch 95 reconstruction | 85 test cases; 20,570 valid frames | Relative L2, u / v / p: **1.373% / 3.247% / 3.500%** |
-| Flow · Epoch 95 one-step prediction | 85 test cases; 20,230 windows; two true historical fields as input | Relative L2, u / v / p: **1.370% / 3.240% / 3.531%** |
+- **Observe spatial distributions.** Examine structural deformation, flow patterns, and local errors across the physical domain.
+- **Represent geometry and conditions.** Describe engineering problems with meshes, signed distance fields, design variables, and known conditions.
+- **Connect space and time.** Combine spatial encoding, temporal modeling, and coordinate decoding to study evolving responses and complete trajectories.
+- **Compare physical fields.** Present model outputs alongside simulation truth and error maps, with traceable material sources.
 
-Flow errors are averaged equally across cases. The displayed flow comparison uses Epoch 71, while the newer numeric evaluation uses Epoch 95. One-step results do not establish long-horizon free-rollout accuracy. See [evaluation definitions](docs/results.md), [machine-readable results](results/summary.json), and [asset provenance](results/provenance.json).
+## Research and Contact
 
-## Explore the Repository
+We welcome discussion on structural transient responses, flow around complex geometries, scientific machine learning, and engineering applications. Use Issues for technical questions and Pull Requests to contribute cases or documentation.
 
-The [case studies](docs/methodology.md) document the inputs, outputs, units, and limitations. The [contribution guide](CONTRIBUTING.md) describes contributing from a personal account to the TSYGAI organization. Detailed case documentation is currently in Chinese.
+**Company email:** [zhangyuan@cocasoft.com](mailto:zhangyuan@cocasoft.com)
 
-This release contains presentation assets and evaluation summaries. Training code, full datasets, and checkpoints are outside this release. See [NOTICE](NOTICE.md) for material provenance and usage notes. The README organization takes inspiration from [NVIDIA PhysicsNeMo](https://github.com/NVIDIA/physicsnemo); TSYG-Surrogates is an independent project.
+This release contains research cases and presentation assets. Training code, full datasets, and checkpoints are outside this release. See [NOTICE](NOTICE.md) for material provenance and usage notes.

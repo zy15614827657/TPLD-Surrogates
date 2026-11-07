@@ -68,11 +68,6 @@
       "bytes": 2776604
     },
     {
-      "path_relative_to_source_root": "100_Car_Crash/Car_Crash_1026/curves/yaris_x00063_r2.png",
-      "sha256": "5a25540919d966ea7cf9e8340c34f208e885eabe065a0585db32907654e5e935",
-      "bytes": 137868
-    },
-    {
       "path_relative_to_source_root": "131_bumper/Bumper_Visualization/figures/stage2/Run227/frame_000_displacement.png",
       "sha256": "01d95c34af625e1924bf0f2f76ce4c5c3cc3ccee552bf72aab360fca4dc8bcdf",
       "bytes": 139987
@@ -168,16 +163,6 @@
       "bytes": 421684
     },
     {
-      "path_relative_to_source_root": "100_Car_Crash/Car_Crash_1026/r2_metrics.json",
-      "sha256": "a4a95f2904ba1e059bcc3f4e78739988897989eb06785596ea4c3719accfa22f",
-      "bytes": 340133
-    },
-    {
-      "path_relative_to_source_root": "100_Car_Crash/Car_Crash_1026/r2_per_case_frame.csv",
-      "sha256": "38a8783634bbacb910c0d69853fef78e27c0b9c0ccbfc3159875978f6c75ecc6",
-      "bytes": 87561
-    },
-    {
       "path_relative_to_source_root": "131_bumper/Bumper_Visualization/stage2_summary.json",
       "sha256": "0723ba195b41171ee67d77b58163a7c86d482e2cf28b91894874bc1fca91f35f",
       "bytes": 27676
@@ -202,11 +187,6 @@
     {
       "output": "assets/car-crash/full-comparison.png",
       "source": "100_Car_Crash/Car_Crash_1026/figures/yaris_x00063/frame_012_t0.120_displacement.png",
-      "operation": "byte-identical copy"
-    },
-    {
-      "output": "assets/car-crash/r2-curve.png",
-      "source": "100_Car_Crash/Car_Crash_1026/curves/yaris_x00063_r2.png",
       "operation": "byte-identical copy"
     },
     {
@@ -334,11 +314,6 @@
       "time_policy": "four source snapshots; no interpolation; display timing is illustrative"
     },
     {
-      "output": "results/car-crash-per-frame.csv",
-      "source": "100_Car_Crash/Car_Crash_1026/r2_per_case_frame.csv",
-      "operation": "byte-identical copy"
-    },
-    {
       "output": "results/bumper-per-frame.csv",
       "source": "131_bumper/Bumper_Visualization/r2_per_case_frame.csv",
       "operation": "byte-identical copy"
@@ -348,7 +323,7 @@
     {
       "path": "assets/branding/hero.svg",
       "bytes": 2950,
-      "sha256": "587e05b3334bf53b37d956f1d91eceea1544d24fe5dc26fce04e20178972d605"
+      "sha256": "78f57d70200c9fdf5709af3a00e5e81470d16cb4e5072cbc8f225da04926ad88"
     },
     {
       "path": "assets/branding/workflow.svg",
@@ -365,16 +340,16 @@
     },
     {
       "path": "assets/bumper/prediction.gif",
-      "bytes": 394228,
-      "sha256": "e41d1476aa2b940f71873fbbb2c2308f48f7f0d227535ea542a4351c882acd7e",
+      "bytes": 389512,
+      "sha256": "4fd1cba9673c63caec970cec1ba86cebc533f3f8e75b6ce8598141511e8247b1",
       "width": 1200,
       "height": 560,
       "frames": 11
     },
     {
       "path": "assets/bumper/preview.png",
-      "bytes": 109320,
-      "sha256": "71c50a609877b2c292955c943a0b0e3caca9226389a5f45aa54227f2db4b6388",
+      "bytes": 108770,
+      "sha256": "058871ff3cc9ae9690ecc9600aa6da8c723f310f59d1011bc343dee542b0f55c",
       "width": 1200,
       "height": 560,
       "frames": 1
@@ -397,26 +372,18 @@
     },
     {
       "path": "assets/car-crash/prediction.gif",
-      "bytes": 1010724,
-      "sha256": "05946adacc76cd28eca780045001a8a14c3bb30ef98e8ddceed0226811fd5469",
+      "bytes": 1005981,
+      "sha256": "99151219f93dad6b9a4d09a37596338f6f5b8d045ac78518d8af9603da709f90",
       "width": 1200,
       "height": 560,
       "frames": 13
     },
     {
       "path": "assets/car-crash/preview.png",
-      "bytes": 259895,
-      "sha256": "b348ded41548daa86808553cd03ea203df9d615367b9e8f8095c6742c100bcea",
+      "bytes": 259537,
+      "sha256": "53f08bca29d0be01f381aa702c8c982bf86567a24bff719318d308813c51713e",
       "width": 1200,
       "height": 560,
-      "frames": 1
-    },
-    {
-      "path": "assets/car-crash/r2-curve.png",
-      "bytes": 137868,
-      "sha256": "5a25540919d966ea7cf9e8340c34f208e885eabe065a0585db32907654e5e935",
-      "width": 2160,
-      "height": 1368,
       "frames": 1
     },
     {
@@ -468,16 +435,6 @@
       "path": "results/bumper-stage2.json",
       "bytes": 10571,
       "sha256": "c356224a95ab3a38c27af7a25da4ae0163aa3540de12f85cebfce3cd43704170"
-    },
-    {
-      "path": "results/car-crash-per-frame.csv",
-      "bytes": 87561,
-      "sha256": "38a8783634bbacb910c0d69853fef78e27c0b9c0ccbfc3159875978f6c75ecc6"
-    },
-    {
-      "path": "results/car-crash.json",
-      "bytes": 320859,
-      "sha256": "b2983141b8e79311150c3fba9179706db5902c3e8e38b2beb26b620cf65e17f0"
     },
     {
       "path": "results/flow-displayed-case.json",
