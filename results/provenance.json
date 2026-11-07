@@ -388,24 +388,24 @@
     },
     {
       "path": "assets/flow/gallery/harmonics-17-Re-166/prediction-fields.png",
-      "bytes": 597124,
-      "sha256": "39323cf5e20cab2de5114d7dc8c081ebb0dfa9b3447276e1b21b2570c8b75ccf",
+      "bytes": 593339,
+      "sha256": "cceae6f67df8b5f2e55e8ca8683153e755c09e4f84ede3e4bbfc131b684b3992",
       "width": 2160,
       "height": 936,
       "frames": 1
     },
     {
       "path": "assets/flow/gallery/harmonics-17-Re-166/prediction-preview.png",
-      "bytes": 93644,
-      "sha256": "05c8af1f0b367f16675af8c648dd3617143871ac8f612382910796cf9788605a",
+      "bytes": 93102,
+      "sha256": "63ede78d6740e2247b53bb2481f490006f7946f5f6732a768366225d4cc13cb8",
       "width": 1100,
       "height": 748,
       "frames": 1
     },
     {
       "path": "assets/flow/gallery/harmonics-17-Re-166/prediction.gif",
-      "bytes": 7574318,
-      "sha256": "009608259cc00d1151ffee62cdae2d8752fc634b0f40ada31bd38827962a9c4e",
+      "bytes": 7493037,
+      "sha256": "4860501f4fc473849137fab292f5207bf75691e6242369eb4e4f436769d6988e",
       "width": 800,
       "height": 544,
       "frames": 100
@@ -436,24 +436,24 @@
     },
     {
       "path": "assets/flow/gallery/harmonics-17-Re-974/prediction-fields.png",
-      "bytes": 607886,
-      "sha256": "1ed2d71b38e53ea762d138eaf5c4e2f274c11d335c40b4d0a7ccfa066ce13010",
+      "bytes": 605330,
+      "sha256": "c0da529a1a7b2dc80b12f9adc06a14988633be3df40c27e710d954f72f80dff8",
       "width": 2160,
       "height": 936,
       "frames": 1
     },
     {
       "path": "assets/flow/gallery/harmonics-17-Re-974/prediction-preview.png",
-      "bytes": 108881,
-      "sha256": "828eff1fd0ad85037b2881e65750eefe1ed7b6e2e42c7299e02ea17f999e6d8f",
+      "bytes": 108295,
+      "sha256": "82877bdba029e66d989f77ec52c93883bd91d59b3a3d06a120010f740489f622",
       "width": 1100,
       "height": 748,
       "frames": 1
     },
     {
       "path": "assets/flow/gallery/harmonics-17-Re-974/prediction.gif",
-      "bytes": 7591298,
-      "sha256": "49d4955dfae4a8c92a7c77c15966970aac7ed42e94066a6cfbb0897c19fe72e2",
+      "bytes": 7513229,
+      "sha256": "1d4a9b8b7bc8ff75de9180c6d612b44cacf912510c0dc2b794782e39a913637f",
       "width": 800,
       "height": 544,
       "frames": 100
@@ -484,24 +484,24 @@
     },
     {
       "path": "assets/flow/gallery/harmonics-92-Re-272/prediction-fields.png",
-      "bytes": 654767,
-      "sha256": "7aac9a4be523fe018fb765b656dd13e2afe672e8437d30858da05b11920d4489",
+      "bytes": 650628,
+      "sha256": "ab1329a14230a903ccabb2fa1cc51da1c2a4a0cac134e74d47d81ea2b3649a1d",
       "width": 2160,
       "height": 936,
       "frames": 1
     },
     {
       "path": "assets/flow/gallery/harmonics-92-Re-272/prediction-preview.png",
-      "bytes": 100055,
-      "sha256": "4a9ecfec700ef59ff8a9339f1c9f61e8e67e375bb1ababd31cedc4e29ccd2b18",
+      "bytes": 99515,
+      "sha256": "702a619afacb7624e358a65df46e1a762e7b3fe9edcc4fc86fcb0c5b13958b2d",
       "width": 1100,
       "height": 748,
       "frames": 1
     },
     {
       "path": "assets/flow/gallery/harmonics-92-Re-272/prediction.gif",
-      "bytes": 7816506,
-      "sha256": "9cdb89e448802961428694562633d9a7784bc6233d0dbfeadd127c6c4fdc0be3",
+      "bytes": 7614048,
+      "sha256": "34b9afffdbcfc10e2bfc8bddcd1fd6ac452ea36da39bf52425e533ff91c3c791",
       "width": 800,
       "height": 544,
       "frames": 100
@@ -532,24 +532,24 @@
     },
     {
       "path": "assets/flow/gallery/harmonics-92-Re-411/prediction-fields.png",
-      "bytes": 660189,
-      "sha256": "203e8f03b0fae30b35c9307e253aaec0ef8334019f26d2d7b895d43797f164a0",
+      "bytes": 656348,
+      "sha256": "0cd7707101848f7081eef44a37302cc1048909b9a94924e6525b46b8af71ffec",
       "width": 2160,
       "height": 936,
       "frames": 1
     },
     {
       "path": "assets/flow/gallery/harmonics-92-Re-411/prediction-preview.png",
-      "bytes": 103486,
-      "sha256": "5b96071318cdd54a37a0fc4aeeeb1e0bcd9c1ea2aa4b00647270a6a07066ef51",
+      "bytes": 102910,
+      "sha256": "132d7dec2e6dd16fa8523575a06616b06e052ba3fd3193533672f6816a917bca",
       "width": 1100,
       "height": 748,
       "frames": 1
     },
     {
       "path": "assets/flow/gallery/harmonics-92-Re-411/prediction.gif",
-      "bytes": 7985900,
-      "sha256": "327287fab64a631d21dde5f3481ca0fcb95569c7a8011f8d6841b206f0594621",
+      "bytes": 7945782,
+      "sha256": "ff90e964d25f8f3d7b605ba0ad0341fa817b4e6d83c750d7a2f633ee9ee83965",
       "width": 800,
       "height": 544,
       "frames": 100
@@ -580,24 +580,24 @@
     },
     {
       "path": "assets/flow/gallery/nurbs-62-Re-179/prediction-fields.png",
-      "bytes": 646575,
-      "sha256": "bdf35d5d0ae49bedafb290583ff11aa834cea06c1a5ad7a56b35e7d84d0af4dc",
+      "bytes": 643300,
+      "sha256": "09cc7f6fcb1ce62bda6cf51d833b89ac4654f4b83bbadee4f8c73014cdd5ed16",
       "width": 2160,
       "height": 936,
       "frames": 1
     },
     {
       "path": "assets/flow/gallery/nurbs-62-Re-179/prediction-preview.png",
-      "bytes": 99380,
-      "sha256": "b0632c6cf2b24ad3164915ab7d7165730a70bf4d96e4beb4b7b716d03a34ba72",
+      "bytes": 98845,
+      "sha256": "4eaf575038480ec52c8955d539c07a8b60e1312164688891dd62e5045d1853d5",
       "width": 1100,
       "height": 748,
       "frames": 1
     },
     {
       "path": "assets/flow/gallery/nurbs-62-Re-179/prediction.gif",
-      "bytes": 7964776,
-      "sha256": "99cac627d2e84326042a7e2c24e392024b42492696c2a14ce3d571bb2b16cf62",
+      "bytes": 7895601,
+      "sha256": "ee718358714f12cb52bfa48b5cb10c8733c482067caefa09c142a26bbbcc8102",
       "width": 800,
       "height": 544,
       "frames": 100
@@ -628,24 +628,24 @@
     },
     {
       "path": "assets/flow/gallery/nurbs-62-Re-979/prediction-fields.png",
-      "bytes": 656181,
-      "sha256": "55c9caa1bd936b65c9f333ec0caab734ecbe1bdb0b4378b9cc0d008767b542e0",
+      "bytes": 653691,
+      "sha256": "dc5cf69ba675182bbf0533e01fa076794a98c31cf54165e1adb8df445ffc02a5",
       "width": 2160,
       "height": 936,
       "frames": 1
     },
     {
       "path": "assets/flow/gallery/nurbs-62-Re-979/prediction-preview.png",
-      "bytes": 104160,
-      "sha256": "1bd06241bea700f555dc4e39a8b651cdea07da96c17f17d93598c77e84abc16e",
+      "bytes": 103587,
+      "sha256": "b1f19c617cc06101dbc86b679e547db6cdf3893a3a582ab3c68d16999f21b6d5",
       "width": 1100,
       "height": 748,
       "frames": 1
     },
     {
       "path": "assets/flow/gallery/nurbs-62-Re-979/prediction.gif",
-      "bytes": 7269433,
-      "sha256": "9c0f80db9468cbf70a9d3df20316dfddb0b6a63ca37f81818e0daf74e9dfa595",
+      "bytes": 7100113,
+      "sha256": "580cd5ced1da842ee58eef48ca0437e89ae633c43543ea5b071f2a73e94b77b4",
       "width": 800,
       "height": 544,
       "frames": 100
@@ -676,24 +676,24 @@
     },
     {
       "path": "assets/flow/gallery/nurbs-87-Re-311/prediction-fields.png",
-      "bytes": 699296,
-      "sha256": "5db0a2478be11d314c293b622600614b3bfbef23305037dc0ac2d7a429c69379",
+      "bytes": 696422,
+      "sha256": "48e87a8ab79f12ec0dafe8e57867109ad23b456e53e81886dad294ebe8114376",
       "width": 2160,
       "height": 936,
       "frames": 1
     },
     {
       "path": "assets/flow/gallery/nurbs-87-Re-311/prediction-preview.png",
-      "bytes": 112826,
-      "sha256": "e8ae20c1b28e7d1069897fe4c18cd74de1867ca5c1e65db81d0c87fe3e252925",
+      "bytes": 112246,
+      "sha256": "8263b3a2ad38a78a67c7660152a221bc6a9a21c940be6fe2646cc75090185dca",
       "width": 1100,
       "height": 748,
       "frames": 1
     },
     {
       "path": "assets/flow/gallery/nurbs-87-Re-311/prediction.gif",
-      "bytes": 8591005,
-      "sha256": "1b0c2794a65ba8e72050ba290fc11311ddaa869cd5cdc3f418be93b5f935f0cf",
+      "bytes": 8414315,
+      "sha256": "55a9797b76b086adf67996150480c4345922e6e715d567ae76c39d3d1f8e0433",
       "width": 800,
       "height": 544,
       "frames": 100
@@ -724,24 +724,24 @@
     },
     {
       "path": "assets/flow/gallery/nurbs-87-Re-874/prediction-fields.png",
-      "bytes": 655515,
-      "sha256": "d8e43cfe5f594fca4db84c0670c8bc373b926ec5d9f1f02b4eb5bc9427f30e16",
+      "bytes": 652039,
+      "sha256": "7d5e7cd21f3730813f5f5edeff39325b96b7aeea4bc9418b1e153edc864f2298",
       "width": 2160,
       "height": 936,
       "frames": 1
     },
     {
       "path": "assets/flow/gallery/nurbs-87-Re-874/prediction-preview.png",
-      "bytes": 121301,
-      "sha256": "087ce16ab036638d568e745b2b6aa9ccf52b49c42844311a006a6706902e0307",
+      "bytes": 120646,
+      "sha256": "e8f1593913398bd47baf88f3a9d3ab5aad7c0ff8d14fafca6c4663a0d33e1038",
       "width": 1100,
       "height": 748,
       "frames": 1
     },
     {
       "path": "assets/flow/gallery/nurbs-87-Re-874/prediction.gif",
-      "bytes": 9695585,
-      "sha256": "41cc98f2ef3675f5f26b3ca4057971639ef74d57a6771db1d582ca9f80ce7910",
+      "bytes": 9623322,
+      "sha256": "edf49cd874c0acd7844667dcf9a22374a9e6ccbf35919a92fcd382356b716790",
       "width": 800,
       "height": 544,
       "frames": 100

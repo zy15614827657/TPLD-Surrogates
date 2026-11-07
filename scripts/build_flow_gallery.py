@@ -56,7 +56,7 @@ def scientific_frame(true, model, mask, meta, index, task, limit):
            font=font(19), fill="#c5dee6")
     cmap = plt.get_cmap("RdBu_r")
     for field, y, title in [(true, 132, "SIMULATION"),
-                            (model, 424, "ONE-STEP PREDICTION" if task == "prediction" else "AE RECONSTRUCTION")]:
+                            (model, 424, "PREDICTION" if task == "prediction" else "AE RECONSTRUCTION")]:
         d.text((48, y-33), title, font=font(20, True), fill=NAVY)
         rgb = np.asarray(cmap(np.clip((field+limit)/(2*limit), 0, 1), bytes=True)[..., :3]).copy()
         rgb[~mask] = (45, 58, 68)
@@ -73,7 +73,7 @@ def scientific_frame(true, model, mask, meta, index, task, limit):
         d.text((1053, y), f"{v:.1f}", font=font(14), fill=NAVY)
     d.text((1032, 102), "v", font=font(17, True), fill=NAVY)
     d.line((28, 699, 1072, 699), fill="#d7e4eb", width=1)
-    note = "Simulation vs one-step prediction | 100 frames | 20 fps" if task == "prediction" else "Inputs: geometry, Re + true field at the displayed time"
+    note = "Simulation vs Prediction | 100 frames | 20 fps" if task == "prediction" else "Inputs: geometry, Re + true field at the displayed time"
     d.text((29, 711), note, font=font(17), fill="#536b79")
     return im
 
@@ -96,7 +96,7 @@ def save_gif(frames, path):
 
 def full_comparison(truth, model, mask, meta, task, path):
     fig, axes = plt.subplots(3, 3, figsize=(18, 7.8), layout="constrained")
-    label = "One-step prediction" if task == "prediction" else "AE reconstruction"
+    label = "Prediction" if task == "prediction" else "AE reconstruction"
     for channel, name in enumerate(["u", "v", "p"]):
         a, b = truth[-1,...,channel], model[-1,...,channel]
         lower = float(min(a[mask].min(), b[mask].min()))
@@ -113,7 +113,7 @@ def full_comparison(truth, model, mask, meta, task, path):
             ax.set_title(f"{name} | {title}",loc="left",fontsize=12)
             ax.set_xlabel("x");ax.set_ylabel("y")
             fig.colorbar(pic,ax=ax,shrink=.70,pad=.025)
-    note="Simulation / one-step prediction / absolute error" if task=="prediction" else "Current true field enters reconstruction"
+    note="Simulation / Prediction / absolute error" if task=="prediction" else "Current true field enters reconstruction"
     fig.suptitle(meta["case_id"]+" | saved frame 242 | "+note+"\nOriginal stored field units; matched color scales for simulation and model",fontsize=15)
     fig.savefig(path,dpi=120);plt.close(fig)
 
