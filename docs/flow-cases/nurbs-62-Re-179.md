@@ -2,13 +2,13 @@
 
 [主页](../../README.md) · [绕流预测图集](../flow-prediction.md) · [流场重建图集](../flow-reconstruction.md)
 
-该工况来自固定测试集。关注：倾斜细长物体后的尾迹。下方分别展示单步预测与空间重建的流场对比。
+该工况来自固定测试集。关注：倾斜细长物体后的尾迹。下方分别展示预测与空间重建的流场对比。
 
-## 仿真与单步预测
+## 仿真与预测
 
-仿真与单步预测逐帧对照，连续展示 100 个保存时刻。
+仿真与预测逐帧对照，连续展示 100 个保存时刻。
 
-![仿真与单步预测的100帧对比](../../assets/flow/gallery/nurbs-62-Re-179/prediction.gif)
+![仿真与预测的100帧对比](../../assets/flow/gallery/nurbs-62-Re-179/prediction.gif)
 
 [打开末帧 u / v / p、预测与误差高清图](../../assets/flow/gallery/nurbs-62-Re-179/prediction-fields.png)
 

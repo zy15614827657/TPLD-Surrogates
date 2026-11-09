@@ -10,7 +10,7 @@
 | [bumper-per-frame.csv](../results/bumper-per-frame.csv) | 空间重建与整轨迹预测 | 逐帧位移 R²、SSE、SST、RMSE、MAE |
 | [flow-epoch071.json](../results/flow-epoch071.json) | 自编码器，Epoch 71；85 个测试工况的最后保存帧 | 与展示图册同版本的全工况汇总 |
 | [flow-displayed-case.json](../results/flow-displayed-case.json) | `nurbs/87/Re_874`，Epoch 71 | 展示工况、输入字段与单帧指标 |
-| [flow-epoch095.json](../results/flow-epoch095.json) | 自编码器，Epoch 95；85 个测试工况 | 全帧重建、匹配目标帧重建、单步预测及保持上一帧基线 |
+| [flow-epoch095.json](../results/flow-epoch095.json) | 自编码器，Epoch 95；85 个测试工况 | 全帧重建、匹配目标帧重建、预测及保持上一帧基线 |
 | [summary.json](../results/summary.json) | 对上述文件的数值提取 | 数值摘要 |
 
 ## 阅读结构指标
@@ -30,7 +30,7 @@ reported relative L2(channel) = mean_over_cases(relative L2(case, channel))
 
 求和区域为该任务评估的全部有效时刻与流体像素，固体不参与统计。归约为工况等权，不等于直接把所有工况拼接后的 pooled 指标。
 
-全有效帧重建使用当前真实场；单步预测使用两帧真实历史场。模型没有在此评估中连续使用自己的预测作为后续输入，因此单步误差不能代表长期自由滚动误差。
+全有效帧重建使用当前真实场；预测使用两帧真实历史场。模型没有在此评估中连续使用自己的预测作为后续输入，因此该评估误差不能代表长期自由滚动误差。
 
 ## 素材与复核
 

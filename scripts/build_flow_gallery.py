@@ -123,13 +123,13 @@ def case_doc(slug, meta, shape, feature):
 
 [主页](../../README.md) · [绕流预测图集](../flow-prediction.md) · [流场重建图集](../flow-reconstruction.md)
 
-该工况来自固定测试集。关注：{feature}。下方分别展示单步预测与空间重建的流场对比。
+该工况来自固定测试集。关注：{feature}。下方分别展示预测与空间重建的流场对比。
 
-## 仿真与单步预测
+## 仿真与预测
 
-仿真与单步预测逐帧对照，连续展示 100 个保存时刻。
+仿真与预测逐帧对照，连续展示 100 个保存时刻。
 
-![仿真与单步预测的100帧对比](../../assets/flow/gallery/{slug}/prediction.gif)
+![仿真与预测的100帧对比](../../assets/flow/gallery/{slug}/prediction.gif)
 
 [打开末帧 u / v / p、预测与误差高清图](../../assets/flow/gallery/{slug}/prediction-fields.png)
 
@@ -147,8 +147,8 @@ def case_doc(slug, meta, shape, feature):
 
 def gallery_doc(task, cases):
     prediction=task=="prediction"
-    heading="绕流演化：仿真与单步预测" if prediction else "流场重建：不同形状与雷诺数"
-    intro=("对比不同物体形状与雷诺数下的仿真流场和单步预测结果，观察尾迹随时间的变化。" if prediction else
+    heading="绕流演化：仿真与预测" if prediction else "流场重建：不同形状与雷诺数"
+    intro=("对比不同物体形状与雷诺数下的仿真流场和预测结果，观察尾迹随时间的变化。" if prediction else
            "每个时刻将真实流场输入自编码器，比较仿真场与重建场，观察不同几何和 Re 下的空间表示能力。")
     other="flow-reconstruction.md" if prediction else "flow-prediction.md"
     text=f'''# {heading}
